@@ -7,4 +7,4 @@ else
 	mkdir dist
 fi
 
-usemin src/index.html --dest dist --output dist/index.html
+usemin src/index.html --dest dist --output dist/index.html --htmlmin

@@ -1,9 +1,7 @@
-(function () {
-	'use strict';
+'use strict';
 
-	function gameLoop() {
-		requestAnimationFrame(gameLoop);
-	}
+function gameLoop() {
+	requestAnimationFrame(gameLoop);
+}
 
-	gameLoop();
-}());
+gameLoop();
