@@ -2,15 +2,20 @@
 <html>
 	<head>
 		<title>js13kGames 2016</title>
+
+		<!-- build:css index.css -->
+		<link rel="stylesheet" href="index.css" />
+		<!-- endbuild -->
 	</head>
 	<body>
-		<canvas id="game" width="800" height="600"></canvas>
+		<canvas class="game"></canvas>
 		
 		<!-- build:js index.js -->
-		<script src="index.js"></script>
 		<script src="ecs/Entity.js"></script>
 		<script src="ecs/EntityStateMachine.js"></script>
 		<script src="ecs/component.js"></script>
+
+		<script src="index.js"></script>		
 		<!-- endbuild -->
 	</body>
 </html>
