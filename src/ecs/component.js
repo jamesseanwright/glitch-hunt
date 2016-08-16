@@ -1,3 +1,5 @@
+'use strict';
+
 var component = {
 	_previous: null,
 	_next: null,
