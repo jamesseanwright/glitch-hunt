@@ -1,9 +1,11 @@
 'use strict';
 
-function getScreenXPos(x) {
-    return x / WORLD_WIDTH * window.innerWidth / SCALE;
+function getScreenXPos(x, ignoreScale) {
+    var scale = ignoreScale ? 1 : SCALE;
+    return x / WORLD_WIDTH * window.innerWidth / scale;
 }
 
-function getScreenYPos(y) {
-    return y / WORLD_HEIGHT * window.innerHeight / SCALE;
+function getScreenYPos(y, ignoreScale) {
+    var scale = ignoreScale ? 1 : SCALE;    
+    return y / WORLD_HEIGHT * window.innerHeight / scale;
 }

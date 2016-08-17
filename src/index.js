@@ -7,8 +7,12 @@ var outputContext = outputCanvas.getContext('2d');
 
 var textRenderSystem = new TextRenderSystem(renderingContext);
 var rectRenderSystem = new RectRenderSystem(renderingContext);
+var clickSystem = new ClickSystem(outputCanvas);
 
-var button = new Button('Foo', 0.3, 0.3, 0.2, 0.2);
+var button = new Button('Foo', 0.3, 0.3, 0.2, 0.2, function () {
+	console.log('click');
+	game.start();
+});
 
 initCanvases();
 

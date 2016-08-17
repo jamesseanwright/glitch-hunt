@@ -14,9 +14,9 @@ var system = {
         this._entities.push(entity);
     },
 
-    update: function update() {
+    update: function update(data) {
         for (var i in this._entities) {
-            this.next(this._entities[i]);
+            this.next(this._entities[i], data);
         }
     }
 }
