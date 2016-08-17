@@ -1,5 +1,13 @@
-'use strict';
+(function () {
+    'use strict';
 
-var SCALE = 4;
-var WORLD_WIDTH = 1;
-var WORLD_HEIGHT = 1;
+    /* string property accessor is
+     * workaround for Closure Compiler */
+    window['G'] = {
+        constants: {
+            SCALE: 4,
+            WORLD_WIDTH: 1,
+            WORLD_HEIGHT: 1
+        }
+    };
+}());

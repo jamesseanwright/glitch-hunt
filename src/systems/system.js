@@ -1,6 +1,6 @@
 'use strict';
 
-var system = {
+G.system = {
     _entities: [],
 
     create: function create(next) {
@@ -19,4 +19,4 @@ var system = {
             this.next(this._entities[i], data);
         }
     }
-}
+};

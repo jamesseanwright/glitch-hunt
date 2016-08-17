@@ -1,43 +1,47 @@
-'use strict';
+(function () {
+	'use strict';
 
-var renderingCanvas = document.querySelector('.game-renderer');
-var renderingContext = renderingCanvas.getContext('2d');
-var outputCanvas = document.querySelector('.game-output');
-var outputContext = outputCanvas.getContext('2d');
+	var renderingCanvas = document.querySelector('.game-renderer');
+	var renderingContext = renderingCanvas.getContext('2d');
+	var outputCanvas = document.querySelector('.game-output');
+	var outputContext = outputCanvas.getContext('2d');
 
-var textRenderSystem = new TextRenderSystem(renderingContext);
-var rectRenderSystem = new RectRenderSystem(renderingContext);
-var clickSystem = new ClickSystem(outputCanvas);
+	G.textRenderSystem = new G.TextRenderSystem(renderingContext);
+	G.rectRenderSystem = new G.RectRenderSystem(renderingContext);
+	G.clickSystem = new G.ClickSystem(outputCanvas);
 
-var button = new Button('New Game', 0.34, 0.3, 0.3, 0.2, function () {
-	console.log('click');
-	game.start();
-});
+	var button = new G.Button('New Game', 0.34, 0.3, 0.3, 0.2, function () {
+		console.log('click');
+		game.start();
+	});
 
-var logo = new Logo();
+	var logo = new G.Logo();
 
-initCanvases();
+	initCanvases();
 
-function initCanvases() {
-	renderingCanvas.width = window.innerWidth / SCALE;
-	renderingCanvas.height = window.innerHeight / SCALE;
+	function initCanvases() {
+		var scale = G.constants.SCALE;
 
-	outputCanvas.width = window.innerWidth;
-	outputCanvas.height = window.innerHeight;
+		renderingCanvas.width = window.innerWidth / scale;
+		renderingCanvas.height = window.innerHeight / scale;
 
-	outputContext.imageSmoothingEnabled = false;
-	outputContext.scale(SCALE, SCALE);
-}
+		outputCanvas.width = window.innerWidth;
+		outputCanvas.height = window.innerHeight;
 
-function gameLoop(time) {
-	renderingContext.clearRect(0, 0, renderingCanvas.width, renderingCanvas.height);	
-	
-	rectRenderSystem.update();
-	textRenderSystem.update();	
+		outputContext['imageSmoothingEnabled'] = false;
+		outputContext.scale(scale, scale);
+	}
 
-	outputContext.clearRect(0, 0, outputCanvas.width, outputCanvas.height);		
-	outputContext.drawImage(renderingCanvas, 0, 0);
-	requestAnimationFrame(gameLoop);
-}
+	function gameLoop(time) {
+		renderingContext.clearRect(0, 0, renderingCanvas.width, renderingCanvas.height);	
+		
+		G.rectRenderSystem.update();
+		G.textRenderSystem.update();	
 
-gameLoop();
+		outputContext.clearRect(0, 0, outputCanvas.width, outputCanvas.height);		
+		outputContext.drawImage(renderingCanvas, 0, 0);
+		requestAnimationFrame(gameLoop);
+	}
+
+	gameLoop();
+}());

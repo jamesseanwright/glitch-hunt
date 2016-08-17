@@ -1,6 +1,9 @@
-'use strict';
+(function () {
+    'use strict';
 
-function Clickable(action) {
-    this.clickAction = action;
-    clickSystem.register(this);
-}
+    G.Clickable = function Clickable(action) {
+        this.clickAction = action;
+        
+        G.clickSystem.register(this);
+    };
+}());

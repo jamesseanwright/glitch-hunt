@@ -1,6 +1,8 @@
-'use strict';
+(function () {
+    'use strict';
 
-function Positionable(x, y) {
-    this.x = x;
-    this.y = y;
-}
+    G.Positionable = function Positionable(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+}());

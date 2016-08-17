@@ -14,7 +14,5 @@
   "author": "James Wright <james@jamesswright.co.uk>",
   "license": "ISC",
   "homepage": "https://bitbucket.org/jamesseanwright/js13k-2016#readme",
-  "devDependencies": {
-    "usemin-cli": "0.1.0"
-  }
+  "devDependencies": {}
 }
