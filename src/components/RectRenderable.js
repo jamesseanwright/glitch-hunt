@@ -1,8 +1,8 @@
 'use strict';
 
-function RectRenderable(stroke, fill, x, y, width, height) {
+function RectRenderable(stroke, border, x, y, width, height) {
     this.stroke = stroke;
-    this.fill = fill;
+    this.border = border;
     this.x = x;
     this.y = y;
     this.width = width;
