@@ -8,9 +8,7 @@ var outputContext = outputCanvas.getContext('2d');
 var textRenderSystem = new TextRenderSystem(renderingContext);
 var rectRenderSystem = new RectRenderSystem(renderingContext);
 
-var button = new Button('Foo', 0.1, 0.1, 0.1, 0.1);
-
-var SCALE = 4;
+var button = new Button('Foo', 0.3, 0.3, 0.2, 0.2);
 
 initCanvases();
 
@@ -27,8 +25,9 @@ function initCanvases() {
 
 function gameLoop(time) {
 	renderingContext.clearRect(0, 0, renderingCanvas.width, renderingCanvas.height);	
-	textRenderSystem.update();
+	
 	rectRenderSystem.update();
+	textRenderSystem.update();	
 
 	outputContext.clearRect(0, 0, outputCanvas.width, outputCanvas.height);		
 	outputContext.drawImage(renderingCanvas, 0, 0);
