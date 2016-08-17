@@ -5,8 +5,11 @@ var renderingContext = renderingCanvas.getContext('2d');
 var outputCanvas = document.querySelector('.game-output');
 var outputContext = outputCanvas.getContext('2d');
 
+var textRenderSystem = new TextRenderSystem(renderingContext);
+
+var button = new Button('Foo', 0.1, 0.1, 0.3, 0.2);
+
 var SCALE = 4;
-var button = new Button('Foo', 20, 20, 100, 100);
 
 initCanvases();
 
@@ -21,11 +24,11 @@ function initCanvases() {
 	outputContext.scale(SCALE, SCALE);
 }
 
-function gameLoop(ts) {
-	renderingContext.clearRect(0, 0, 500, 36);	
-	textRenderSystem.update(renderingContext);
+function gameLoop(time) {
+	renderingContext.clearRect(0, 0, renderingCanvas.width, renderingCanvas.height);	
+	textRenderSystem.update();
 
-	outputContext.clearRect(0, 0, 500 * SCALE, 36 * SCALE);		
+	outputContext.clearRect(0, 0, outputCanvas.width, outputCanvas.height);		
 	outputContext.drawImage(renderingCanvas, 0, 0);
 	requestAnimationFrame(gameLoop);
 }
