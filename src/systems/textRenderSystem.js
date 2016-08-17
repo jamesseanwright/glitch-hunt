@@ -1,6 +1,6 @@
 'use strict';
 
-var textRenderableSystem = {
+var textRenderSystem = {
     _entities: [],
 
     register: function register(entity) {

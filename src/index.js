@@ -23,7 +23,7 @@ function initCanvases() {
 
 function gameLoop(ts) {
 	renderingContext.clearRect(0, 0, 500, 36);	
-	textRenderableSystem.update(renderingContext);
+	textRenderSystem.update(renderingContext);
 
 	outputContext.clearRect(0, 0, 500 * SCALE, 36 * SCALE);		
 	outputContext.drawImage(renderingCanvas, 0, 0);
