@@ -9,10 +9,12 @@ var textRenderSystem = new TextRenderSystem(renderingContext);
 var rectRenderSystem = new RectRenderSystem(renderingContext);
 var clickSystem = new ClickSystem(outputCanvas);
 
-var button = new Button('Foo', 0.3, 0.3, 0.2, 0.2, function () {
+var button = new Button('New Game', 0.34, 0.3, 0.3, 0.2, function () {
 	console.log('click');
 	game.start();
 });
+
+var logo = new Logo();
 
 initCanvases();
 
