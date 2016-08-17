@@ -14,7 +14,7 @@ var textRenderableSystem = {
             entity = this._entities[i];
             context.fillStyle = entity.fill;
             context.font = entity.font;
-            context.fillText(entity.text, this.x, this.y);
+            context.fillText(entity.text, entity.x, entity.y);
         }
     }
 };
