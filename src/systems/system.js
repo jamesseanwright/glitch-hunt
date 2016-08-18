@@ -15,7 +15,9 @@ G.system = {
 
     update: function update(data) {
         for (var i in this._entities) {
-            this.next(this._entities[i], data);
+            if (this._entities[i].isActive) {
+                this.next(this._entities[i], data);
+            }
         }
     }
 };

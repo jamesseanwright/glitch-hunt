@@ -17,23 +17,27 @@
             var group = this._entities[name];
             var entity = group.items[group.activeCount];
 
+            entity.isActive = true;
             group.activeCount++;
             return entity;
         },
 
         getSingleton: function getSingleton(name) {
-            return this._entities.singletons[name];
+            var entity = this._entities.singletons[name];
+
+            entity.isActive = true;
+            return entity;
         },
 
         reset: function reset(name, entity) {
             var group = this._entities[name];
 
+            entity.isActive = false;            
             group.activeCount--;
-            entity.isActive = false;
         },
 
         resetSingleton: function resetSingleton(name) {
-            var entity = this._entities.singletons;
+            var entity = this._entities.singletons[name];
             entity.isActive = false;
         }
     };
