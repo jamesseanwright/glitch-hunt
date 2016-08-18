@@ -23,6 +23,7 @@ closure-compiler \
 	--js src/entities/Button.js \
 	--js src/entities/Logo.js \
 	--js src/entities/entityPool.js \
+	--js src/gameState.js \
 	--js src/gameLoop.js \
 	--js_output_file dist/index.min.js \
 	--compilation_level ADVANCED_OPTIMIZATIONS \
