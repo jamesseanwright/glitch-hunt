@@ -1,10 +1,9 @@
 'use strict';
 
 G.system = {
-    _entities: [],
-
     create: function create(next) {
         var proto = Object.create(this);
+        proto._entities = [];
         proto.next = next;
 
         return proto;

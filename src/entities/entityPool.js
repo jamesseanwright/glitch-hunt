@@ -21,6 +21,10 @@
             return entity;
         },
 
+        getSingleton: function getSingleton(name) {
+            return this._entities.singletons[name];
+        },
+
         reset: function reset(name, entity) {
             var group = this._entities[name];
 
@@ -28,8 +32,9 @@
             entity.isActive = false;
         },
 
-        getSingleton: function getSingleton(name) {
-            return this._entities.singletons[name];
+        resetSingleton: function resetSingleton(name) {
+            var entity = this._entities.singletons;
+            entity.isActive = false;
         }
     };
 
