@@ -1,11 +1,9 @@
 (function () {
     'use strict';
 
-    G.RectRenderable = function RectRenderable(stroke, fill, width, height) {
+    G.RectRenderable = function RectRenderable(stroke, fill) {
         this.stroke = stroke;
         this.fill = fill;
-        this.width = width;
-        this.height = height;
 
         G.rectRenderSystem.register(this);
     };
