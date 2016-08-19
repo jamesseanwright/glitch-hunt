@@ -13,15 +13,17 @@ closure-compiler \
 	--js src/keyboard.js \
 	\
 	--js src/systems/system.js \
+	--js src/systems/ClickSystem.js \
+	--js src/systems/CollisionSystem.js \
 	--js src/systems/RectRenderSystem.js \
 	--js src/systems/TextRenderSystem.js \
-	--js src/systems/ClickSystem.js \
 	--js src/systems/initSystems.js \
 	\
+	--js src/components/Clickable.js \
+	--js src/components/Collidable.js \
 	--js src/components/Positionable.js \
 	--js src/components/RectRenderable.js \
 	--js src/components/TextRenderable.js \
-	--js src/components/Clickable.js \
 	\
 	--js src/entities/EntityStateMachine.js \
 	--js src/entities/Button.js \
