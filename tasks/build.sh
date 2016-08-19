@@ -10,6 +10,7 @@ fi
 closure-compiler \
 	--js src/init.js \
 	--js src/getScreenPos.js \
+	--js src/keyboard.js \
 	\
 	--js src/systems/system.js \
 	--js src/systems/RectRenderSystem.js \
