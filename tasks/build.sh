@@ -39,4 +39,5 @@ closure-compiler \
 	--create_source_map dist/index.map
 
 cp src/index.html dist/
-cp src/index.css dist
+cp src/index.css dist/
+cp -r src/images/* dist # flattening the dir saves ~100 bytes
