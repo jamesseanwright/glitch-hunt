@@ -13,8 +13,8 @@
             var images = document.querySelectorAll('.game-image');
             var imageName;
 
-            for (var i in images) {
-                imageName = images[i].src.replace('.png', '');
+            for (var i = 0; i < images.length; i++) {
+                imageName = images[i].dataset.name;
                 this[imageName] = images[i];
             } 
         }
