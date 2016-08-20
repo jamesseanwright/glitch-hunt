@@ -5,7 +5,7 @@
         this.context = context;
     }
 
-    RectRenderSystem.prototype = G.system.create(function next(entity, context) {
+    RectRenderSystem.prototype = G.system.create(function next(entity) {
         if (entity.fill) {
             this.context.fillStyle = entity.fill;
         

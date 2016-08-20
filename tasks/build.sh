@@ -9,18 +9,21 @@ fi
 
 closure-compiler \
 	--js src/init.js \
+	--js src/images.js \
 	--js src/getScreenPos.js \
 	--js src/keyboard.js \
 	\
 	--js src/systems/system.js \
 	--js src/systems/ClickSystem.js \
 	--js src/systems/CollisionSystem.js \
+	--js src/systems/ImageRenderSystem.js \
 	--js src/systems/RectRenderSystem.js \
 	--js src/systems/TextRenderSystem.js \
 	--js src/systems/initSystems.js \
 	\
 	--js src/components/Clickable.js \
 	--js src/components/Collidable.js \
+	--js src/components/ImageRenderable.js \
 	--js src/components/Positionable.js \
 	--js src/components/RectRenderable.js \
 	--js src/components/TextRenderable.js \
@@ -28,6 +31,7 @@ closure-compiler \
 	--js src/entities/EntityStateMachine.js \
 	--js src/entities/Button.js \
 	--js src/entities/Logo.js \
+	--js src/entities/Screen.js \
 	--js src/entities/entityPool.js \
 	\
 	--js src/gameState.js \

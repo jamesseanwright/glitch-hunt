@@ -19,6 +19,6 @@ body {
 	align-content: center;
 }
 
-.resource {
+.resource, .game-image {
 	display: none;
 }

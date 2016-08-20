@@ -5,7 +5,7 @@
         this.context = context;
     }
 
-    TextRenderSystem.prototype = G.system.create(function next(entity, context) {
+    TextRenderSystem.prototype = G.system.create(function next(entity) {
         this.context.fillStyle = entity.fontFill;
         this.context.font = entity.font;
 
