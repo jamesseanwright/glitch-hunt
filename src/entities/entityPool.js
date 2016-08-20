@@ -5,7 +5,12 @@
         _entities: {
             button: {
                 activeCount: 0,
-                items: [ new G.Button() ]
+                items: [new G.Button()]
+            },
+
+            screen: {
+                activeCount: 0,
+                items: [new G.Screen()]
             },
 
             singletons: {
