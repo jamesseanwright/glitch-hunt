@@ -2,6 +2,7 @@
 	'use strict';
 
 	initCanvases();
+	G.scenes.title();
 
 	function initCanvases() {
 		var scale = G.constants.SCALE;

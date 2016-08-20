@@ -34,7 +34,8 @@ closure-compiler \
 	--js src/entities/Screen.js \
 	--js src/entities/entityPool.js \
 	\
-	--js src/gameState.js \
+	--js src/scenes/title.js \
+	\
 	--js src/gameLoop.js \
 	\
 	--js_output_file dist/index.min.js \

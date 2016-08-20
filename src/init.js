@@ -16,6 +16,8 @@
         renderingCanvas: document.querySelector('.game-renderer'),
         renderingContext: renderingCanvas.getContext('2d'),
         outputCanvas: document.querySelector('.game-output'),
-        outputContext: outputCanvas.getContext('2d')
+        outputContext: outputCanvas.getContext('2d'),
+
+        scenes: {}
     };
 }());
