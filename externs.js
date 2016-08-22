@@ -6,7 +6,9 @@ var entityPool = {
         },
 
         singletons: {
-            logo: {}
+            logo: {},
+            screen: {},
+            captureZone: {}
         }
     }
 };

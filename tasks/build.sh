@@ -30,6 +30,7 @@ closure-compiler \
 	\
 	--js src/entities/EntityStateMachine.js \
 	--js src/entities/Button.js \
+	--js src/entities/CaptureZone.js \
 	--js src/entities/Logo.js \
 	--js src/entities/Screen.js \
 	--js src/entities/entityPool.js \

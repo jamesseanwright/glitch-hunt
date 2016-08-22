@@ -8,13 +8,10 @@
                 items: [new G.Button()]
             },
 
-            screen: {
-                activeCount: 0,
-                items: [new G.Screen()]
-            },
-
             singletons: {
-                logo: new G.Logo()
+                captureZone: new G.CaptureZone(),
+                logo: new G.Logo(),
+                screen: new G.Screen()
             }
         },
 
