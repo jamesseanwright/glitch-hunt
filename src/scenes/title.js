@@ -8,7 +8,7 @@
         button.init('New Game', 0.34, 0.3, 0.3, 0.2, function () {
             G.entityPool.reset('button', button);
             G.entityPool.resetSingleton('logo');
-            gameState.hacking();
+            G.scenes.hacking();
         });
     };
 }());
