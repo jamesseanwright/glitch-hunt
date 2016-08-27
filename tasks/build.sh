@@ -42,8 +42,7 @@ closure-compiler \
 	\
 	--js_output_file dist/index.min.js \
 	--compilation_level ADVANCED_OPTIMIZATIONS \
-	--externs externs.js \
-	--create_source_map dist/index.map
+	--externs externs.js
 
 cp src/index.html dist/
 cp src/index.css dist/

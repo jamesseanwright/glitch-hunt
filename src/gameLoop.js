@@ -9,10 +9,10 @@
 
 		G.renderingCanvas.width = window.innerWidth / scale;
 		G.renderingCanvas.height = window.innerHeight / scale;
+		G.renderingCanvas['imageSmoothingEnabled'] = false;		
 
 		G.outputCanvas.width = window.innerWidth;
 		G.outputCanvas.height = window.innerHeight;
-
 		G.outputContext['imageSmoothingEnabled'] = false;
 		G.outputContext.scale(scale, scale);
 	}
