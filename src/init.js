@@ -10,7 +10,8 @@
         constants: {
             SCALE: 4,
             WORLD_WIDTH: 1,
-            WORLD_HEIGHT: 1
+            WORLD_HEIGHT: 1,
+            ASPECT_RATIO: 1.777777
         },
 
         renderingCanvas: document.querySelector('.game-renderer'),
