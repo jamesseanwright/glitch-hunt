@@ -8,6 +8,20 @@
                 items: [new G.Button()]
             },
 
+            key: {
+                activeCount: 0,
+                items: [
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key()
+                ]
+            },
+
             singletons: {
                 captureZone: new G.CaptureZone(),
                 logo: new G.Logo(),

@@ -14,6 +14,7 @@ closure-compiler \
 	--js src/keyboard.js \
 	\
 	--js src/systems/system.js \
+	--js src/systems/AutoMoveSystem.js \
 	--js src/systems/ClickSystem.js \
 	--js src/systems/CollisionSystem.js \
 	--js src/systems/ImageRenderSystem.js \
@@ -21,6 +22,7 @@ closure-compiler \
 	--js src/systems/TextRenderSystem.js \
 	--js src/systems/initSystems.js \
 	\
+	--js src/components/AutoMoveable.js \
 	--js src/components/Clickable.js \
 	--js src/components/Collidable.js \
 	--js src/components/ImageRenderable.js \
@@ -31,6 +33,7 @@ closure-compiler \
 	--js src/entities/EntityStateMachine.js \
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \
+	--js src/entities/Key.js \
 	--js src/entities/Logo.js \
 	--js src/entities/Screen.js \
 	--js src/entities/entityPool.js \
@@ -47,3 +50,5 @@ closure-compiler \
 cp src/index.html dist/
 cp src/index.css dist/
 cp -r src/images/* dist # flattening the dir saves ~100 bytes
+
+zip -9 -j -D -X -r glitch-jw.zip dist/*
