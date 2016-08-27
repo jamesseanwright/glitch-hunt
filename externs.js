@@ -5,6 +5,11 @@ var entityPool = {
             items: [ {} ]
         },
 
+        key: {
+            activeCount: 0,
+            items: [ {} ]
+        },
+
         singletons: {
             logo: {},
             screen: {},
