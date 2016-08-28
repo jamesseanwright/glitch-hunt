@@ -8,7 +8,7 @@
      * workaround for Closure Compiler */
     window['G'] = {
         constants: {
-            SCALE: 4,
+            SCALE: 2,
             WORLD_WIDTH: 1,
             WORLD_HEIGHT: 1,
             ASPECT_RATIO: 1.777777
