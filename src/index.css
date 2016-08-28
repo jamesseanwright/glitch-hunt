@@ -4,17 +4,13 @@ html, body {
 
 body {
 	margin: 0;
-	display: flex;
-	flex-direction: row;
+	background: #303030;
 }
 
-.game-renderer {
-	display: none;
-}
-
-.game-output {
+.game-rendering {
 	background: black;
-	align-content: center;
+	display: block;
+	margin: 0 auto;
 }
 
 .resource, .game-image {

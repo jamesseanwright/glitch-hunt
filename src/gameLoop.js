@@ -1,22 +1,12 @@
 (function () {
 	'use strict';
 
-	initCanvases();
+	initCanvas();
 	G.scenes.title();
 
-	function initCanvases() {
-		var SCALE = G.constants.SCALE;
-		var ASPECT_RATIO = G.constants.ASPECT_RATIO;
-
-		G.renderingCanvas.width = (window.innerHeight * ASPECT_RATIO) / SCALE;
-		G.renderingCanvas.height = window.innerHeight / SCALE;
-
-		G.renderingContext['imageSmoothingEnabled'] = false;
-
-		G.outputCanvas.width = window.innerHeight * ASPECT_RATIO;
-		G.outputCanvas.height = window.innerHeight;
-		G.outputContext['imageSmoothingEnabled'] = false;
-		G.outputContext.scale(SCALE, SCALE);
+	function initCanvas() {
+		G.renderingCanvas.width = G.constants.PIXEL_WIDTH;
+		G.renderingCanvas.height = G.constants.PIXEL_HEIGHT;
 	}
 
 	function gameLoop(time) {
@@ -26,8 +16,6 @@
 		G.rectRenderSystem.update();
 		G.textRenderSystem.update();
 
-		G.outputContext.clearRect(0, 0, G.outputCanvas.width, G.outputCanvas.height);
-		G.outputContext.drawImage(G.renderingCanvas, 0, 0);
 		requestAnimationFrame(gameLoop);
 	}
 

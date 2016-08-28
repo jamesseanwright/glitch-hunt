@@ -14,8 +14,8 @@
    id="svg3845"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="aKey.svg"
-   inkscape:export-filename="/home/james/dev/js/js13k-2016/rawImages/aKey.png"
+   sodipodi:docname="leftArrowKey.svg"
+   inkscape:export-filename="/home/james/dev/js/js13k-2016/rawImages/arrowLeftKey.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="61.103542"
-     inkscape:cy="15.516789"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="63.028854"
+     inkscape:cy="77.184219"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -37,7 +37,7 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:window-width="1301"
      inkscape:window-height="744"
      inkscape:window-x="65"
@@ -61,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -82,14 +82,11 @@
        id="rect3867"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsscc" />
-    <g
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       id="text4418"
-       transform="matrix(0.8440426,0,0,0.49897097,0.32980852,67.379823)">
-      <path
-         d="m 205.18755,102.28451 -5.35157,10.20099 10.72266,0 -5.37109,-10.20099 m -2.22657,-2.732167 4.47266,0 11.11328,20.498097 -4.10156,0 -2.65625,-5.25839 -13.14453,0 -2.65625,5.25839 -4.16016,0 11.13281,-20.498097"
-         id="path4423"
-         inkscape:connector-curvature="0" />
-    </g>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m 182.28572,120.14762 -17.5,0 0,-2.99383 -5.17589,4.85047 5.17589,5.12895 0,-2.99383 17.5,0 z"
+       id="path4472"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
   </g>
 </svg>

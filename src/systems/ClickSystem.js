@@ -10,10 +10,10 @@
     }
 
     ClickSystem.prototype = G.system.create(function next(entity, event) {        
-        var x = G.getScreenXPos(entity.x, true);
-        var y = G.getScreenYPos(entity.y, true);
-        var width = G.getScreenXPos(entity.width, true);
-        var height = G.getScreenYPos(entity.height, true);
+        var x = G.getScreenXPos(entity.x);
+        var y = G.getScreenYPos(entity.y);
+        var width = G.getScreenXPos(entity.width);
+        var height = G.getScreenYPos(entity.height);
 
         var isInBounds = event.clientX >= x && event.clientX <= x + width && event.clientY >= y && event.clientY <= y + height;
 

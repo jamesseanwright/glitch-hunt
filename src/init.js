@@ -1,23 +1,20 @@
 (function () {
     'use strict';
 
-    var renderingCanvas = document.querySelector('.game-renderer');
-    var outputCanvas = document.querySelector('.game-output');
+    var renderingCanvas = document.querySelector('.game-rendering');
 
     /* string property accessor is
      * workaround for Closure Compiler */
     window['G'] = {
         constants: {
-            SCALE: 2,
+            PIXEL_WIDTH: 640,
+            PIXEL_HEIGHT: 360,
             WORLD_WIDTH: 1,
-            WORLD_HEIGHT: 1,
-            ASPECT_RATIO: 1.777777
+            WORLD_HEIGHT: 1
         },
 
-        renderingCanvas: document.querySelector('.game-renderer'),
+        renderingCanvas: renderingCanvas,
         renderingContext: renderingCanvas.getContext('2d'),
-        outputCanvas: document.querySelector('.game-output'),
-        outputContext: outputCanvas.getContext('2d'),
 
         scenes: {}
     };

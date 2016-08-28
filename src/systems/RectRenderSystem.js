@@ -19,7 +19,7 @@
 
         if (entity.stroke) {
             this.context.strokeStyle = entity.stroke;
-        
+
             this.context.strokeRect(
                 G.getScreenXPos(entity.x),
                 G.getScreenYPos(entity.y),
