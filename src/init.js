@@ -18,4 +18,7 @@
 
         scenes: {}
     };
+
+    G.renderingCanvas.width = G.constants.PIXEL_WIDTH;
+	G.renderingCanvas.height = G.constants.PIXEL_HEIGHT;
 }());

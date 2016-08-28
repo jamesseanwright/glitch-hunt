@@ -9,7 +9,7 @@
         });
     }
 
-    ClickSystem.prototype = G.system.create(function next(entity, event) {        
+    ClickSystem.prototype = G.system.create(function next(entity, event) {
         var x = G.getScreenXPos(entity.x);
         var y = G.getScreenYPos(entity.y);
         var width = G.getScreenXPos(entity.width);
