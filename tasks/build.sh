@@ -15,16 +15,17 @@ closure-compiler \
 	\
 	--js src/systems/system.js \
 	--js src/systems/AutoMoveSystem.js \
+	--js src/systems/CaptureSystem.js \
 	--js src/systems/ClickSystem.js \
-	--js src/systems/CollisionSystem.js \
 	--js src/systems/ImageRenderSystem.js \
 	--js src/systems/RectRenderSystem.js \
 	--js src/systems/TextRenderSystem.js \
 	--js src/systems/initSystems.js \
 	\
 	--js src/components/AutoMoveable.js \
+	--js src/components/Capturable.js \
+	--js src/components/Capturing.js \
 	--js src/components/Clickable.js \
-	--js src/components/Collidable.js \
 	--js src/components/ImageRenderable.js \
 	--js src/components/Positionable.js \
 	--js src/components/RectRenderable.js \

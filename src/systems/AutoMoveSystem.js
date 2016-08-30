@@ -8,10 +8,5 @@
         entity.x += entity.speed * entity.direction;
     });
 
-    AutoMoveSystem.direction = {
-        LEFT: -1,
-        RIGHT: 1
-    }
-
     G.AutoMoveSystem = AutoMoveSystem;
 }());
