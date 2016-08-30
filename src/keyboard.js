@@ -20,7 +20,7 @@
             s: false
         },
 
-        init(target) {
+        init: function(target) {
             target.addEventListener('keydown', function (e) {
                 keyboard._updateKey(e.key, true);
             });
