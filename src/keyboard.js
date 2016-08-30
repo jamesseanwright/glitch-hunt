@@ -2,14 +2,14 @@
     'use strict';
 
     var keyboard = {
-        keys: {
-            UP: 'ArrowUp',
-            DOWN: 'ArrowDown',
-            LEFT: 'ArrowLeft',
-            RIGHT: 'ArrowRight',
-            A: 'a',
-            S: 's',
-        },
+        supportedKeys: [
+            'ArrowUp',
+            'ArrowDown',
+            'ArrowLeft',
+            'ArrowRight',
+            'a',
+            's'
+        ],
 
         _activeKeys: {
             ArrowUp: false,
@@ -21,6 +21,12 @@
         },
 
         init: function(target) {
+            this._activeKeys = {};
+
+            for (var i = 0; i < this.supportedKeys.length; i++) {
+                this._activeKeys[this.supportedKeys[i]] = false;
+            }
+
             target.addEventListener('keydown', function (e) {
                 keyboard._updateKey(e.key, true);
             });
