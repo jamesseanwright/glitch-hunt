@@ -13,7 +13,8 @@ var entityPool = {
         singletons: {
             logo: {},
             screen: {},
-            captureZone: {}
+            captureZone: {},
+            keyGen: {}
         }
     }
 };

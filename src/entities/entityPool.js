@@ -18,6 +18,10 @@
                     new G.Key(),
                     new G.Key(),
                     new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
+                    new G.Key(),
                     new G.Key()
                 ]
             },
@@ -25,7 +29,8 @@
             singletons: {
                 captureZone: new G.CaptureZone(),
                 logo: new G.Logo(),
-                screen: new G.Screen()
+                screen: new G.Screen(),
+                keyGen: new G.KeyGen()
             }
         },
 
@@ -33,6 +38,7 @@
             var group = this._entities[name];
             var entity = group.items[group.activeCount];
 
+            entity.name = name;
             entity.isActive = true;
             group.activeCount++;
             return entity;
@@ -45,8 +51,8 @@
             return entity;
         },
 
-        reset: function reset(name, entity) {
-            var group = this._entities[name];
+        reset: function reset(entity) {
+            var group = this._entities[entity.name];
 
             entity.isActive = false;            
             group.activeCount--;

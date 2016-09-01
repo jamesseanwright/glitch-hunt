@@ -7,4 +7,5 @@
 	G.clickSystem = new G.ClickSystem(G.renderingCanvas);
 	G.autoMoveSystem = new G.AutoMoveSystem();
 	G.captureSystem = new G.CaptureSystem();
+	G.generatorSystem = new G.GeneratorSystem();
 }());

@@ -1,10 +1,6 @@
 (function () {
     'use strict';
 
-    var supportedKeys = [
-
-    ]
-
     function Key() {
         
     }

@@ -5,7 +5,7 @@
         this.context = context;
     }
 
-    ImageRenderSystem.prototype = G.system.create(function next(entity) {
+    ImageRenderSystem.prototype = G.system.create(function next(entity) {        
         this.context.drawImage(
             entity.image,
             G.getScreenXPos(entity.x),

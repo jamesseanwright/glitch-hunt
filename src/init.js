@@ -10,7 +10,9 @@
             PIXEL_WIDTH: 640,
             PIXEL_HEIGHT: 360,
             WORLD_WIDTH: 1,
-            WORLD_HEIGHT: 1
+            WORLD_HEIGHT: 1,
+
+            KEY_GEN_INTERVAL_MS: 1000
         },
 
         renderingCanvas: renderingCanvas,

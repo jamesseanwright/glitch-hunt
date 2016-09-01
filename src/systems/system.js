@@ -13,10 +13,10 @@ G.system = {
         this._entities.push(entity);
     },
 
-    update: function update(data) {
+    update: function update(timestamp) {
         for (var i in this._entities) {
             if (this._entities[i].isActive) {
-                this.next(this._entities[i], data);
+                this.next(this._entities[i], timestamp);
             }
         }
     }

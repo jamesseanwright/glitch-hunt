@@ -17,6 +17,7 @@ closure-compiler \
 	--js src/systems/AutoMoveSystem.js \
 	--js src/systems/CaptureSystem.js \
 	--js src/systems/ClickSystem.js \
+	--js src/systems/GeneratorSystem.js \
 	--js src/systems/ImageRenderSystem.js \
 	--js src/systems/RectRenderSystem.js \
 	--js src/systems/TextRenderSystem.js \
@@ -26,6 +27,7 @@ closure-compiler \
 	--js src/components/Capturable.js \
 	--js src/components/Capturing.js \
 	--js src/components/Clickable.js \
+	--js src/components/Generating.js \
 	--js src/components/ImageRenderable.js \
 	--js src/components/Positionable.js \
 	--js src/components/RectRenderable.js \
@@ -35,6 +37,7 @@ closure-compiler \
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \
 	--js src/entities/Key.js \
+	--js src/entities/KeyGen.js \
 	--js src/entities/Logo.js \
 	--js src/entities/Screen.js \
 	--js src/entities/entityPool.js \
