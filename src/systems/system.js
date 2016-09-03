@@ -10,7 +10,9 @@ G.system = {
     },
 
     register: function register(entity) {
-        this._entities.push(entity);
+        if (this._entities.indexOf(entity) === -1) {
+            this._entities.push(entity);            
+        }
     },
 
     update: function update(timestamp) {
