@@ -24,10 +24,10 @@
         // actions for CaptureSystem
         captureActions: {
             increaseScore: function increaseScore() {
-                G.score += KEY_CAPTURE_SCORE_INCREMENT;
+                G.gameState.score += G.constants.KEY_CAPTURE_SCORE_INCREMENT;
 
-                if (G.score % G.SCORE_LEVEL_UP_THRESHOLD === 0) {
-                    G.level++;
+                if (G.gameState.score % G.constants.SCORE_LEVEL_UP_THRESHOLD === 0) {
+                    G.gameState.level++;
                 }
             }
         },
