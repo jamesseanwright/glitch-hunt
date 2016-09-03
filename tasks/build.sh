@@ -33,7 +33,6 @@ closure-compiler \
 	--js src/components/RectRenderable.js \
 	--js src/components/TextRenderable.js \
 	\
-	--js src/entities/EntityStateMachine.js \
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \
 	--js src/entities/Hud.js \

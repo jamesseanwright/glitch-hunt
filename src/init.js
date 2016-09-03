@@ -18,11 +18,9 @@
 
         gameState: {
             score: 0,
-            level: 1
-        },
+            level: 1,
+            health: 3,
 
-        // actions for CaptureSystem
-        captureActions: {
             increaseScore: function increaseScore() {
                 G.gameState.score += G.constants.KEY_CAPTURE_SCORE_INCREMENT;
 
