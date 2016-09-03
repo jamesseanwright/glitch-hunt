@@ -36,6 +36,7 @@ closure-compiler \
 	--js src/entities/EntityStateMachine.js \
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \
+	--js src/entities/Hud.js \
 	--js src/entities/Key.js \
 	--js src/entities/KeyGen.js \
 	--js src/entities/Logo.js \

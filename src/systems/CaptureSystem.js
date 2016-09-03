@@ -1,7 +1,8 @@
 (function () {
     'use strict';
 
-    function CaptureSystem() {
+    function CaptureSystem(captureActions) {
+		this.captureActions = captureActions;
 	}
 
     CaptureSystem.prototype = G.system.create(function next(entity) {
@@ -9,8 +10,7 @@
 							&& entity.x + entity.width <= this.capturer.x + this.capturer.width;
 
 		if (isInBounds && G.keyboard.isPressed(entity.key)) {
-			console.log('captured');
-			entity.isCaptured = true;
+			entity.onCapture();
 		}
     });
 

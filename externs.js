@@ -11,6 +11,7 @@ var entityPool = {
         },
 
         singletons: {
+            hud: {},
             logo: {},
             screen: {},
             captureZone: {},
