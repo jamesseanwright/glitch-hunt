@@ -4,12 +4,12 @@
     var entityPool = {
         _entities: {
             button: {
-                activeCount: 0,
+                position: 0,
                 items: [new G.Button()]
             },
 
             key: {
-                activeCount: 0,
+                position: 0,
                 items: [
                     new G.Key(),
                     new G.Key(),
@@ -36,11 +36,12 @@
 
         get: function get(name) {
             var group = this._entities[name];
-            var entity = group.items[group.activeCount];
+            var entity = group.items[group.position];
 
             entity.name = name;
             entity.isActive = true;
-            group.activeCount++;
+            group.position = group.position === group.items.length - 1 ? 0 : group.position + 1;
+
             return entity;
         },
 
@@ -52,10 +53,7 @@
         },
 
         reset: function reset(entity) {
-            var group = this._entities[entity.name];
-
-            entity.isActive = false;            
-            group.activeCount--;
+            entity.isActive = false;
         },
 
         resetSingleton: function resetSingleton(name) {
