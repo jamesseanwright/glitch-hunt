@@ -8,18 +8,18 @@
     Key.prototype.init = function init(x, y, width, height, speed) {
         var key = Key.getRandom();
 
-        G.Shrinkable.deregister(this);
-        G.Positionable.call(this, x, y, width, height);
-        G.ImageRenderable.call(this, G.images[key + 'Key']);
-        G.AutoMoveable.call(this, speed, G.AutoMoveable.direction.LEFT);
-        G.Capturable.call(this, key);
+        G.shrinkable.deregister(this);
+        G.positionable(this, x, y, width, height);
+        G.imageRenderable(this, G.images[key + 'Key']);
+        G.autoMoveable(this, speed, G.autoMoveable.direction.LEFT);
+        G.capturable(this, key);
     };
 
     Key.prototype.onCapture = function onCapture() {
         G.gameState.increaseScore();
 
         this.speed = 0; // TODO - house in AutoMoveable
-        G.Shrinkable.call(this);
+        G.shrinkable(this);
     };
 
     Key.getRandom = function getRandom() {

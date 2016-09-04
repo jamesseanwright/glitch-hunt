@@ -14,7 +14,7 @@
     });
 
     AutoMoveSystem.hasLeftScreen = function hasLeftScreen(entity) {
-        if (entity.direction === G.AutoMoveable.direction.LEFT) {
+        if (entity.direction === G.autoMoveable.direction.LEFT) {
             return entity.x + entity.width < 0;
         }
 

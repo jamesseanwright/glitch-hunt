@@ -24,16 +24,16 @@ closure-compiler \
 	--js src/systems/TextRenderSystem.js \
 	--js src/systems/initSystems.js \
 	\
-	--js src/components/AutoMoveable.js \
-	--js src/components/Capturable.js \
-	--js src/components/Capturing.js \
-	--js src/components/Clickable.js \
-	--js src/components/Generating.js \
-	--js src/components/ImageRenderable.js \
-	--js src/components/Positionable.js \
-	--js src/components/RectRenderable.js \
-	--js src/components/Shrinkable.js \
-	--js src/components/TextRenderable.js \
+	--js src/components/autoMoveable.js \
+	--js src/components/capturable.js \
+	--js src/components/capturing.js \
+	--js src/components/clickable.js \
+	--js src/components/generating.js \
+	--js src/components/imageRenderable.js \
+	--js src/components/positionable.js \
+	--js src/components/rectRenderable.js \
+	--js src/components/shrinkable.js \
+	--js src/components/textRenderable.js \
 	\
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \
