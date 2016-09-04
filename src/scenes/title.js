@@ -5,7 +5,12 @@
         var button = G.entityPool.get('button');
         var logo = G.entityPool.getSingleton('logo');
 
-        button.init('New Game', 0.34, 0.3, 0.3, 0.2, function () {
+        var buttonX = 0.34;
+        var buttonY = 0.4;
+        var buttonWidth = 0.3;
+        var buttonHeight = 0.2;
+
+        button.init('New Game', buttonX, buttonY, buttonWidth, buttonHeight, function () {
             G.entityPool.reset(button);
             G.entityPool.resetSingleton('logo');
             G.scenes.hacking();
