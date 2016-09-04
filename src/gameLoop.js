@@ -14,6 +14,7 @@
 		G.captureSystem.update(timestamp);
 		G.generatorSystem.update(timestamp);
 		G.shrinkSystem.update(timestamp);
+		G.computedPositionSystem.update(timestamp);
 
 		requestAnimationFrame(gameLoop);
 	}

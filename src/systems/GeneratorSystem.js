@@ -10,8 +10,8 @@
     GeneratorSystem.prototype = G.system.create(function next(entity, timestamp) {
 		if (this.lastGenerationTime + KEY_GEN_INTERVAL_MS < timestamp) {
             var generatedEntity = G.entityPool.get(entity.entityToGenerate);
-            
-            generatedEntity.init(entity.x, entity.y, entity.width, entity.height, 0.004); // TODO: figure out where speed lives
+
+            generatedEntity.init(entity.x, entity.y, entity.width, entity.height, G.gameState.computeSpeed);
             this.lastGenerationTime = timestamp;
         }
     });

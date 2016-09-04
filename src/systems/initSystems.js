@@ -9,4 +9,5 @@
 	G.captureSystem = new G.CaptureSystem();
 	G.generatorSystem = new G.GeneratorSystem();
 	G.shrinkSystem = new G.ShrinkSystem();
+	G.computedPositionSystem = new G.ComputedPositionSystem();
 }());

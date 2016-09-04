@@ -17,6 +17,7 @@ closure-compiler \
 	--js src/systems/AutoMoveSystem.js \
 	--js src/systems/CaptureSystem.js \
 	--js src/systems/ClickSystem.js \
+	--js src/systems/ComputedPositionSystem.js \
 	--js src/systems/GeneratorSystem.js \
 	--js src/systems/ImageRenderSystem.js \
 	--js src/systems/RectRenderSystem.js \
@@ -28,6 +29,7 @@ closure-compiler \
 	--js src/components/capturable.js \
 	--js src/components/capturing.js \
 	--js src/components/clickable.js \
+	--js src/components/computedPositionable.js \
 	--js src/components/generating.js \
 	--js src/components/imageRenderable.js \
 	--js src/components/positionable.js \

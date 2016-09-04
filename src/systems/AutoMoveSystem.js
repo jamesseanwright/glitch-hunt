@@ -6,7 +6,9 @@
     }
 
     AutoMoveSystem.prototype = G.system.create(function next(entity) {
-        entity.x += entity.speed * entity.direction;
+        var speed = typeof entity.speed === 'function' ? entity.speed() : entity.speed;
+
+        entity.x += speed * entity.direction;
 
         if (AutoMoveSystem.hasLeftScreen(entity)) {
             G.entityPool.reset(entity);
