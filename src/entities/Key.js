@@ -18,7 +18,7 @@
         G.gameState.increaseScore();
 
         this.speed = 0; // TODO - house in AutoMoveable
-        G.Rotatable.call(this);
+        G.Shrinkable.call(this);
     };
 
     Key.getRandom = function getRandom() {

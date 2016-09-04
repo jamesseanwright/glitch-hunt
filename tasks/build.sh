@@ -20,6 +20,7 @@ closure-compiler \
 	--js src/systems/GeneratorSystem.js \
 	--js src/systems/ImageRenderSystem.js \
 	--js src/systems/RectRenderSystem.js \
+	--js src/systems/ShrinkSystem.js \
 	--js src/systems/TextRenderSystem.js \
 	--js src/systems/initSystems.js \
 	\
@@ -31,6 +32,7 @@ closure-compiler \
 	--js src/components/ImageRenderable.js \
 	--js src/components/Positionable.js \
 	--js src/components/RectRenderable.js \
+	--js src/components/Shrinkable.js \
 	--js src/components/TextRenderable.js \
 	\
 	--js src/entities/Button.js \

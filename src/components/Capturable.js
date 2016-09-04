@@ -1,9 +1,8 @@
 (function () {
     'use strict';
 
-    G.Capturable = function Capturable(key, onCapture) {
+    G.Capturable = function Capturable(key) {
         this.key = key;
-        this.onCapture = onCapture;
 
         G.captureSystem.register(this);
     };
