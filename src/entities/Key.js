@@ -18,7 +18,7 @@
     Key.prototype.onCapture = function onCapture() {
         G.gameState.increaseScore();
 
-        this.speed = 0; // TODO - house in AutoMoveable
+        G.autoMoveable.deregister(this);
         G.shrinkable(this);
     };
 

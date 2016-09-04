@@ -8,6 +8,10 @@
         G.autoMoveSystem.register(entity);
     };
 
+    G.autoMoveable.deregister = function deregister(entity) {
+        G.autoMoveSystem.deregister(entity);
+    };
+
     G.autoMoveable.direction = {
         LEFT: -1,
         RIGHT: 1
