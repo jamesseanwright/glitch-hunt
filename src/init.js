@@ -2,6 +2,8 @@
     'use strict';
 
     var renderingCanvas = document.querySelector('.game-rendering');
+    var spriteSheetCanvas = document.querySelector('.sprite-sheet-rendering');
+    var individualSpriteCanvas = document.querySelector('.individual-sprite-rendering');
 
     // Global namespace for game
     var G = {
@@ -37,14 +39,20 @@
 
         renderingCanvas: renderingCanvas,
         renderingContext: renderingCanvas.getContext('2d'),
-        spriteContext: document.querySelector('.sprite-rendering').getContext('2d'),
+        spriteSheetCanvas: spriteSheetCanvas,
+        spriteSheetContext: spriteSheetCanvas.getContext('2d'),
+        individualSpriteCanvas: individualSpriteCanvas,
+        individualSpriteContext: individualSpriteCanvas.getContext('2d'),
 
         scenes: {}
     };
 
     G.renderingCanvas.width = G.constants.PIXEL_WIDTH;
 	G.renderingCanvas.height = G.constants.PIXEL_HEIGHT;
-    G.renderingCanvas.imageSmoothingEnabled = false;
+
+    G.renderingCanvas['imageSmoothingEnabled'] = false; // closure compiler hax!
+    G.spriteSheetCanvas['imageSmoothingEnabled'] = false;
+    G.individualSpriteCanvas['imageSmoothingEnabled'] = false;
 
 
     /* string property accessor is

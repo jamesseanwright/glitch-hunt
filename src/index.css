@@ -15,10 +15,9 @@ body {
 	align-self: center;
 }
 
-.sprite-rendering {
-	display: none;
-}
-
-.resource, .game-image {
+.resource,
+.game-image,
+.sprite-sheet-rendering,
+.individual-sprite-rendering {
 	display: none;
 }

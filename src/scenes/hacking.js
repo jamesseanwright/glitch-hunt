@@ -9,7 +9,7 @@
 
         screen.init(0, 0, 1, 1);
         captureZone.init(G.gameState.captureZoneX, 0.05, 0.15, 0.78);
-        keyGen.init(0.8, 0.4, 0.09, 0.07);
+        keyGen.init(0.8, 0.4, 0.09, 0.09);
         hud.init(0, 0, 1, 0.08);
     };
 }());

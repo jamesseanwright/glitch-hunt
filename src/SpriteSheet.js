@@ -12,13 +12,22 @@
     G.SpriteSheet.prototype.renderSprites = function renderSprites() {
         var spritesCount = this.sheetWidth / this.spriteWidth;
         var sprites = new Array(spritesCount);
+        var imageData;
+        var image;
 
-        G.spriteContext.width = this.spriteWidth;
-        G.spriteContext.height = this.spriteHeight;
-        G.spriteContext.drawImage(this.image, 0, 0, this.sheetWidth, this.spriteHeight);
+        G.spriteSheetCanvas.width = this.sheetWidth;
+        G.spriteSheetCanvas.height = this.spriteHeight;
+        G.spriteSheetContext.drawImage(this.image, 0, 0, this.sheetWidth, this.spriteHeight);
+
+        G.individualSpriteCanvas.width = this.spriteWidth;
+        G.individualSpriteCanvas.height = this.spriteHeight;
 
         for (var i = 0; i < spritesCount; i++) {
-            sprites[i] = G.spriteContext.getImageData(i * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight);
+            imageData = G.spriteSheetContext.getImageData(i * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight);
+            G.individualSpriteContext.putImageData(imageData, 0, 0);
+            image = new Image();
+            image.src = G.individualSpriteCanvas.toDataURL('image/png');
+            sprites[i] = image;
         }
 
         return sprites;
