@@ -12,6 +12,7 @@ closure-compiler \
 	--js src/images.js \
 	--js src/getScreenPos.js \
 	--js src/keyboard.js \
+	--js src/computations.js \
 	\
 	--js src/systems/system.js \
 	--js src/systems/AutoMoveSystem.js \
