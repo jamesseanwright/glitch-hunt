@@ -8,6 +8,7 @@
     Key.prototype.init = function init(x, y, width, height, speed) {
         var key = Key.getRandom();
 
+        G.Shrinkable.deregister(this);
         G.Positionable.call(this, x, y, width, height);
         G.ImageRenderable.call(this, G.images[key + 'Key']);
         G.AutoMoveable.call(this, speed, G.AutoMoveable.direction.LEFT);
