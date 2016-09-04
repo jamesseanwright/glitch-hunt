@@ -37,12 +37,14 @@
 
         renderingCanvas: renderingCanvas,
         renderingContext: renderingCanvas.getContext('2d'),
+        spriteContext: document.querySelector('.sprite-rendering').getContext('2d'),
 
         scenes: {}
     };
 
     G.renderingCanvas.width = G.constants.PIXEL_WIDTH;
 	G.renderingCanvas.height = G.constants.PIXEL_HEIGHT;
+    G.renderingCanvas.imageSmoothingEnabled = false;
 
 
     /* string property accessor is

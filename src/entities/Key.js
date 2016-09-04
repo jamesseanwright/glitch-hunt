@@ -6,13 +6,13 @@
     }
 
     Key.prototype.init = function init(x, y, width, height, speed) {
-        var key = Key.getRandom();
+        var keyIndex = Key.getRandomKeyIndex();
 
         G.shrinkable.deregister(this);
         G.positionable(this, x, y, width, height);
-        G.imageRenderable(this, G.images[key + 'Key']);
+        G.imageRenderable(this, G.spriteSheets.keys.get(keyIndex));
         G.autoMoveable(this, speed, G.autoMoveable.direction.LEFT);
-        G.capturable(this, key);
+        G.capturable(this, G.keyboard.supportedKeys[keyIndex]);
     };
 
     Key.prototype.onCapture = function onCapture() {
@@ -22,9 +22,8 @@
         G.shrinkable(this);
     };
 
-    Key.getRandom = function getRandom() {
-        var index = Math.floor(Math.random() * G.keyboard.supportedKeys.length);
-        return G.keyboard.supportedKeys[index];
+    Key.getRandomKeyIndex = function getRandomKeyIndex() {
+        return Math.floor(Math.random() * G.keyboard.supportedKeys.length);
     }
 
     G.Key = Key;

@@ -2,13 +2,14 @@
     'use strict';
 
     var keyboard = {
+        // order corresponds to sprite sheet
         supportedKeys: [
+            'a',
+            's',
             'ArrowUp',
+            'ArrowRight',
             'ArrowDown',
             'ArrowLeft',
-            'ArrowRight',
-            'a',
-            's'
         ],
 
         _activeKeys: {

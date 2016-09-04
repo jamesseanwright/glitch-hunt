@@ -13,6 +13,8 @@ closure-compiler \
 	--js src/getScreenPos.js \
 	--js src/keyboard.js \
 	--js src/computations.js \
+	--js src/SpriteSheet.js \
+	--js src/spriteSheets.js \
 	\
 	--js src/systems/system.js \
 	--js src/systems/AutoMoveSystem.js \

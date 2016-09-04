@@ -15,6 +15,10 @@ body {
 	align-self: center;
 }
 
+.sprite-rendering {
+	display: none;
+}
+
 .resource, .game-image {
 	display: none;
 }

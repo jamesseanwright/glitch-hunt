@@ -5,7 +5,7 @@
      * be created in the DOM with a `game-image` class.
      * The preload method mutates the object directly which
      * is isn't a best practice, but I'm trying to save bytes
-     * 
+     *
      * TODO: preload images before rendering game */
 
     G.images = {
@@ -16,9 +16,12 @@
             for (var i = 0; i < images.length; i++) {
                 imageName = images[i].dataset.name;
                 this[imageName] = images[i];
-            } 
+            }
         }
     };
 
     G.images.load();
+
+    G.images.keys = new Image();
+    G.images.keys.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAJCAMAAABOty+XAAAABlBMVEUAAAD//8waCf7LAAAARUlEQVR4AWNgJAswECvMgMFjYACRGAwoE51GaANCVCkgQLChNIKLaRuamRCAKQK3DdMpcNvgytFtQ7gAUxuGtykLSbIAAI8cAZxzfQ7cAAAAAElFTkSuQmCC';
 }());
