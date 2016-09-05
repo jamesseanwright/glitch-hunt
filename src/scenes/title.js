@@ -5,8 +5,8 @@
         var button = G.entityPool.get('button');
         var logo = G.entityPool.getSingleton('logo');
 
-        var buttonX = 0.34;
-        var buttonY = 0.4;
+        var buttonX = 0.355;
+        var buttonY = 0.5;
         var buttonWidth = 0.3;
         var buttonHeight = 0.2;
 

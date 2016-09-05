@@ -2,7 +2,7 @@
     'use strict';
 
     function Logo() {
-        var x = 0.36;
+        var x = 0.26;
         var y = 0.25;
 
 	    G.positionable(this, x, y);
