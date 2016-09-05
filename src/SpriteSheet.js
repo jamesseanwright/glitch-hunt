@@ -10,7 +10,7 @@
     };
 
     G.SpriteSheet.prototype.renderSprites = function renderSprites() {
-        var spritesCount = this.sheetWidth / this.spriteWidth;
+        var spritesCount = Math.ceil(this.sheetWidth / this.spriteWidth);
         var sprites = new Array(spritesCount);
         var imageData;
         var image;
