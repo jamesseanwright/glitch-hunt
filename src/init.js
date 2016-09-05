@@ -13,11 +13,11 @@
             WORLD_WIDTH: 1,
             WORLD_HEIGHT: 1,
 
-            KEY_GEN_DECREMENT_MS: 50,
+            KEY_GEN_DECREMENT_MS: 80,
             KEY_CAPTURE_SCORE_INCREMENT: 100,
             KEY_SPEED_INCREMENT: 0.001,
             SCORE_LEVEL_UP_THRESHOLD: 1000,
-            CAPTURE_ZONE_X_INCREMENT: 0.007
+            CAPTURE_ZONE_X_INCREMENT: 0.01
         },
 
         gameState: {
@@ -50,9 +50,7 @@
     G.renderingCanvas.width = G.constants.PIXEL_WIDTH;
 	G.renderingCanvas.height = G.constants.PIXEL_HEIGHT;
 
-    G.renderingCanvas['imageSmoothingEnabled'] = false; // closure compiler hax!
-    G.spriteSheetCanvas['imageSmoothingEnabled'] = false;
-    G.individualSpriteCanvas['imageSmoothingEnabled'] = false;
+    G.renderingContext['imageSmoothingEnabled'] = false; // closure compiler hax!
 
 
     /* string property accessor is

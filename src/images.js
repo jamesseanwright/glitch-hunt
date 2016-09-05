@@ -20,8 +20,11 @@
         }
     };
 
-    G.images.load();
+    //G.images.load();
 
     G.images.keys = new Image();
     G.images.keys.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAJCAMAAABOty+XAAAABlBMVEUAAAD//8waCf7LAAAARUlEQVR4AWNgJAswECvMgMFjYACRGAwoE51GaANCVCkgQLChNIKLaRuamRCAKQK3DdMpcNvgytFtQ7gAUxuGtykLSbIAAI8cAZxzfQ7cAAAAAElFTkSuQmCC';
+
+    G.images.screen = new Image();
+    G.images.screen.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAkCAYAAADYZynDAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGpJREFUaIHt2bERgEAIAEFwLMn+K/ieMHrHzEh/PG4jQm4IyapR0cC2eoGv7HPIPFbu8ZqqERGNLmoojaE0htIYSmMojaE0htIYSmMojaE0htIYSmMojaE0htJc/9H5R/yP+z/3efc2Fz0BapUK3+tMql8AAAAASUVORK5CYII=';
 }());
