@@ -60,6 +60,5 @@ closure-compiler \
 
 cp src/index.html dist/
 cp src/index.css dist/
-cp -r src/images/* dist # flattening the dir saves ~100 bytes
 
 zip -9 -j -D -X -r glitch-jw.zip dist/*
