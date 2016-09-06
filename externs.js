@@ -38,4 +38,4 @@ var keyboard = {
         a: false,
         s: false
     }
-}
+};

@@ -51,8 +51,9 @@ closure-compiler \
 	--js src/entities/Screen.js \
 	--js src/entities/entityPool.js \
 	\
-	--js src/scenes/hacking.js \
 	--js src/scenes/title.js \
+	--js src/scenes/hacking.js \
+	--js src/scenes/boss.js \
 	\
 	--js src/gameLoop.js \
 	\

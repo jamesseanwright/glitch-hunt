@@ -15,6 +15,11 @@
             if (G.gameState.score % G.constants.SCORE_LEVEL_UP_THRESHOLD === 0) {
                 G.gameState.level++;
             }
+
+            if (G.gameState.level % G.constants.BOSS_LEVEL_INTERVAL === 0) {
+                G.scenes.hacking.end();
+                G.scenes.boss.start();
+            }
         }
     };
 }());

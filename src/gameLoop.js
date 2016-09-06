@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	G.scenes.title();
+	G.scenes.title.start();
 	G.keyboard.init(window);
 
 	function gameLoop(timestamp) {
