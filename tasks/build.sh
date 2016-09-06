@@ -8,7 +8,9 @@ else
 fi
 
 closure-compiler \
+	--js src/constants.js \
 	--js src/init.js \
+	--js src/gameState.js \
 	--js src/images.js \
 	--js src/getScreenPos.js \
 	--js src/keyboard.js \
