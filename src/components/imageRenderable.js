@@ -6,4 +6,8 @@
 
         G.imageRenderSystem.register(entity);
     };
-}())
+
+    G.imageRenderable.deregister = function deregister(entity) {
+        G.imageRenderSystem.deregister(entity);
+    };
+}());
