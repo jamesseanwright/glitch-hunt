@@ -13,7 +13,7 @@
 
             this.button.init('New Game', buttonX, buttonY, buttonWidth, buttonHeight, function () {
                 G.scenes.title.end();
-                G.scenes.hacking.start();
+                G.scenes.boss.start();
             });
         },
 

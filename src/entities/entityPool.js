@@ -28,11 +28,12 @@
 
             singletons: {
                 captureZone: new G.CaptureZone(),
-                hud: new G.Hud(),
                 glitch: new G.Glitch(),
+                hud: new G.Hud(),
+                keyGen: new G.KeyGen(),
                 logo: new G.Logo(),
-                screen: new G.Screen(),
-                keyGen: new G.KeyGen()
+                player: new G.Player(),
+                screen: new G.Screen()
             }
         },
 

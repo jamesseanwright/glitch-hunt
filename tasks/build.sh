@@ -26,6 +26,7 @@ closure-compiler \
 	--js src/systems/ComputedPositionSystem.js \
 	--js src/systems/GeneratorSystem.js \
 	--js src/systems/ImageRenderSystem.js \
+	--js src/systems/KeyboardMoveSystem.js \
 	--js src/systems/RectRenderSystem.js \
 	--js src/systems/ShrinkSystem.js \
 	--js src/systems/TextRenderSystem.js \
@@ -39,6 +40,7 @@ closure-compiler \
 	--js src/components/computedPositionable.js \
 	--js src/components/generating.js \
 	--js src/components/imageRenderable.js \
+	--js src/components/keyboardMoveable.js \
 	--js src/components/positionable.js \
 	--js src/components/rectRenderable.js \
 	--js src/components/shrinkable.js \
@@ -51,6 +53,7 @@ closure-compiler \
 	--js src/entities/Key.js \
 	--js src/entities/KeyGen.js \
 	--js src/entities/Logo.js \
+	--js src/entities/Player.js \
 	--js src/entities/Screen.js \
 	--js src/entities/entityPool.js \
 	\

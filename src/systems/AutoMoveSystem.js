@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    function AutoMoveSystem(gameWidth) {
-        this.gameWidth = gameWidth;
+    function AutoMoveSystem() {
+
     }
 
     AutoMoveSystem.prototype = G.system.create(function next(entity) {
@@ -20,7 +20,7 @@
             return entity.x + entity.width < 0;
         }
 
-        return entity.x > this.gameWidth;
+        return entity.x > G.constants.WORLD_WIDTH;
     }
 
     G.AutoMoveSystem = AutoMoveSystem;

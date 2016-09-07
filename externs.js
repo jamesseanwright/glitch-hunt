@@ -16,7 +16,8 @@ var entityPool = {
             screen: {},
             captureZone: {},
             keyGen: {},
-            glitch: {}
+            glitch: {},
+            player: {}
         }
     }
 };
