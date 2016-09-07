@@ -20,6 +20,7 @@ closure-compiler \
 	\
 	--js src/systems/system.js \
 	--js src/systems/AutoMoveSystem.js \
+	--js src/systems/BounceSystem.js \
 	--js src/systems/CaptureSystem.js \
 	--js src/systems/ClickSystem.js \
 	--js src/systems/ComputedPositionSystem.js \
@@ -31,6 +32,7 @@ closure-compiler \
 	--js src/systems/initSystems.js \
 	\
 	--js src/components/autoMoveable.js \
+	--js src/components/bounceable.js \
 	--js src/components/capturable.js \
 	--js src/components/capturing.js \
 	--js src/components/clickable.js \
@@ -44,6 +46,7 @@ closure-compiler \
 	\
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \
+	--js src/entities/Glitch.js \
 	--js src/entities/Hud.js \
 	--js src/entities/Key.js \
 	--js src/entities/KeyGen.js \

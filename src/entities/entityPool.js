@@ -29,6 +29,7 @@
             singletons: {
                 captureZone: new G.CaptureZone(),
                 hud: new G.Hud(),
+                glitch: new G.Glitch(),
                 logo: new G.Logo(),
                 screen: new G.Screen(),
                 keyGen: new G.KeyGen()

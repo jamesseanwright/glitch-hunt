@@ -1,7 +1,5 @@
-# Glitch In The Simulator
+# Glitch Patcher
 
 ## Issues
 
-[ ] Fix shitty name
-[ ] Closure Compiler causing property name collisions - potentially avoid `Component.call(this)` pattern
-[ ] Aspect ratio and image rendering - research
+[ ] Caps Lock key bug - ''.toLowerCase()?

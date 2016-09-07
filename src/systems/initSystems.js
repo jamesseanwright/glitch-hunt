@@ -10,4 +10,5 @@
 	G.generatorSystem = new G.GeneratorSystem();
 	G.shrinkSystem = new G.ShrinkSystem();
 	G.computedPositionSystem = new G.ComputedPositionSystem();
+	G.bounceSystem = new G.BounceSystem();
 }());
