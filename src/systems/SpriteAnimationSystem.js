@@ -6,7 +6,7 @@
     }
 
     SpriteAnimationSystem.prototype = G.system.create(function next(entity, timestamp) {
-	
+        entity.image = entity.spriteSheet.get(0);
     });
 
     G.SpriteAnimationSystem = SpriteAnimationSystem;

@@ -20,14 +20,10 @@
 		return G.spriteSheets.playerStationary.get(1);
 	};
 
-    Player.prototype.onMoveLeft = function onMoveLeft() {
-        G.imageRenderable.deregister(this);
-        G.spriteAnimatable(this, G.spriteSheets.playerRunningLeft, 12);
-    };
-
-    Player.prototype.onMoveRight = function onMoveRight() {
-        G.imageRenderable.deregister(this);
-        G.spriteAnimatable(this, G.spriteSheets.playerRunningRight, 12);
+    Player.prototype.onMove = function onMove(isLeft) {
+        var spriteSheet = isLeft ? G.spriteSheets.playerRunningLeft : G.spriteSheets.playerRunningRight;
+        console.log(spriteSheet);
+        G.spriteAnimatable(this, spriteSheet, 12);
     };
 
     G.Player = Player;

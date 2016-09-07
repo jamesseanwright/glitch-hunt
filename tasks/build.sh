@@ -29,6 +29,7 @@ closure-compiler \
 	--js src/systems/KeyboardMoveSystem.js \
 	--js src/systems/RectRenderSystem.js \
 	--js src/systems/ShrinkSystem.js \
+	--js src/systems/SpriteAnimationSystem.js \
 	--js src/systems/TextRenderSystem.js \
 	--js src/systems/initSystems.js \
 	\
@@ -44,6 +45,7 @@ closure-compiler \
 	--js src/components/positionable.js \
 	--js src/components/rectRenderable.js \
 	--js src/components/shrinkable.js \
+	--js src/components/spriteAnimatable.js \
 	--js src/components/textRenderable.js \
 	\
 	--js src/entities/Button.js \
