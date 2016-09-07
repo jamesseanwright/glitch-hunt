@@ -8,4 +8,4 @@
     G.shrinkable.deregister = function deregister(entity) {
         G.shrinkSystem.deregister(entity);
     };
-}())
+}());

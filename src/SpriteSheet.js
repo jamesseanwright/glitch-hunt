@@ -6,12 +6,12 @@
         this.spriteWidth = spriteWidth;
         this.spriteHeight = spriteHeight;
         this.sheetWidth = sheetWidth;
+        this.spritesCount = Math.ceil(this.sheetWidth / this.spriteWidth);        
         this.sprites = this.renderSprites();
     };
 
     G.SpriteSheet.prototype.renderSprites = function renderSprites() {
-        var spritesCount = Math.ceil(this.sheetWidth / this.spriteWidth);
-        var sprites = new Array(spritesCount);
+        var sprites = new Array(this.spritesCount);
         var imageData;
         var image;
 
@@ -22,7 +22,7 @@
         G.individualSpriteCanvas.width = this.spriteWidth;
         G.individualSpriteCanvas.height = this.spriteHeight;
 
-        for (var i = 0; i < spritesCount; i++) {
+        for (var i = 0; i < this.spritesCount; i++) {
             imageData = G.spriteSheetContext.getImageData(i * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight);
             G.individualSpriteContext.putImageData(imageData, 0, 0);
             image = new Image();
