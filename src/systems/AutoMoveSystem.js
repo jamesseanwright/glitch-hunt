@@ -6,7 +6,7 @@
     }
 
     AutoMoveSystem.prototype = G.system.create(function next(entity) {
-        var speed = typeof entity.speed === 'function' ? entity.speed() : entity.speed;
+        var speed = entity.speed instanceof Function ? entity.speed() : entity.speed;
 
         entity.x += speed * entity.direction;
 

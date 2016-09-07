@@ -18,7 +18,7 @@
     TextRenderSystem.prototype = G.system.create(function next(entity) {
         var spriteIndex;
         var fontScale = entity.fontSize / G.spriteSheets.font.spriteHeight;
-        var text = typeof entity.text === 'function' ? entity.text() : entity.text;
+        var text = entity.text instanceof Function ? entity.text() : entity.text;
 
         text = text.toLowerCase();
 

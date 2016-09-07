@@ -8,19 +8,15 @@
     KeyboardMoveSystem.prototype = G.system.create(function next(entity) {
         var key;
         
-        for (var i = 0; i < KeyboardMoveSystem.keys.length; i++) {
-            key = KeyboardMoveSystem.keys[i];
+        for (var i = 0; i < G.keyboardMoveable.keys.length; i++) {
+            key = G.keyboardMoveable.keys[i];
 
             if (G.keyboard.isPressed(key.name)) {
-                entity.x += entity.speed * key.direction;
+                entity.direction = key.direction;
+                entity.x += entity.speed * entity.direction;
             }
         }
     });
-
-    KeyboardMoveSystem.keys = [
-        { name: 'ArrowLeft', direction: -1 },
-        { name: 'ArrowRight', direction: 1 }
-    ];
 
     G.KeyboardMoveSystem = KeyboardMoveSystem;
 }());

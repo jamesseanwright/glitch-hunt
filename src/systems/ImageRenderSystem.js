@@ -6,8 +6,10 @@
     }
 
     ImageRenderSystem.prototype = G.system.create(function next(entity) {
+        var image = entity.image instanceof Function ? entity.image() : entity.image;
+
         this.context.drawImage(
-            entity.image,
+            image,
             G.getScreenXPos(entity.x),
             G.getScreenYPos(entity.y),
             G.getScreenXPos(entity.width),
