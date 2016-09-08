@@ -3,8 +3,8 @@
 
     var X = 0.05;
     var Y = 0.755;
-    var WIDTH = 0.04;
-    var ANIMATED_WIDTH;
+    var WIDTH = 0.038;
+    var ANIMATED_WIDTH = 0.079;
     var HEIGHT = 0.2;
     var SPEED = 0.012;
     var FRAME_RATE = 20;
@@ -30,8 +30,6 @@
 
     Player.prototype.onMove = function onMove(isLeft) {
         var spriteSheet;
-        
-        console.log('onMove');
 
         G.positionable(this, this.x, this.y, ANIMATED_WIDTH, HEIGHT);
 
@@ -40,7 +38,6 @@
     };
 
     Player.prototype.onStop = function onStop() {
-        console.log('on stop');
         G.spriteAnimatable.deregister(this);
         G.positionable(this, this.x, this.y, WIDTH, HEIGHT);
         G.imageRenderable(this, this.getSprite);

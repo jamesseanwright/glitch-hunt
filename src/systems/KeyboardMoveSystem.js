@@ -17,12 +17,16 @@
 
                 if (!entity.isMoving) {
                     entity.onMove(entity.direction === G.keyboardMoveable.direction.LEFT);
-                    entity.isMoving = true;                   
+                    entity.isMoving = true;
                 }
-            } else if (G.keyboard.isNothingPressed() && entity.isMoving) {
-                entity.onStop();
-                entity.isMoving = false;
+
+                return;
             }
+        }
+
+        if (entity.isMoving) {
+            entity.onStop();
+            entity.isMoving = false;
         }
     });
 
