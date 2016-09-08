@@ -41,6 +41,12 @@
             return this._activeKeys[keyName];
         },
 
+        isNothingPressed() {
+            return this.supportedKeys.reduce(function (isLastPressed, key) {
+                return isLastPressed || G.keyboard._activeKeys[key];
+            }, false);
+        },
+
         _updateKey(keyName, isActive) {
             this._activeKeys[keyName] = isActive;
         }

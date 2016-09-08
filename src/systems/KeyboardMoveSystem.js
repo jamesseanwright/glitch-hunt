@@ -14,7 +14,14 @@
             if (G.keyboard.isPressed(key.name)) {
                 entity.direction = key.direction;
                 entity.x += entity.speed * entity.direction;
-                entity.onMove(entity.direction === G.keyboardMoveable.direction.LEFT);
+
+                if (!entity.isMoving) {
+                    entity.onMove(entity.direction === G.keyboardMoveable.direction.LEFT);
+                    entity.isMoving = true;                   
+                }
+            } else if (G.keyboard.isNothingPressed() && entity.isMoving) {
+                entity.onStop();
+                entity.isMoving = false;
             }
         }
     });
