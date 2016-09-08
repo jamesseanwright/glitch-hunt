@@ -8,6 +8,7 @@
 	G.computedPositionSystem = new G.ComputedPositionSystem();
 	G.generatorSystem = new G.GeneratorSystem();
     G.imageRenderSystem = new G.ImageRenderSystem(G.renderingContext);
+    G.jumpSystem = new G.JumpSystem();
 	G.keyboardMoveSystem = new G.KeyboardMoveSystem();
 	G.rectRenderSystem = new G.RectRenderSystem(G.renderingContext);
 	G.shrinkSystem = new G.ShrinkSystem();

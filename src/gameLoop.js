@@ -18,6 +18,7 @@
 		G.computedPositionSystem.update(timestamp);
 		G.bounceSystem.update(timestamp);
 		G.keyboardMoveSystem.update(timestamp);
+		G.jumpSystem.update(timestamp);
 
 		requestAnimationFrame(gameLoop);
 	}
