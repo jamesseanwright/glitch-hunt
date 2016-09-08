@@ -4,7 +4,7 @@
     var X = 0.05;
     var Y = 0.755;
     var WIDTH = 0.038;
-    var ANIMATED_WIDTH = 0.079;
+    var ANIMATED_WIDTH = 0.08;
     var HEIGHT = 0.2;
     var SPEED = 0.012;
     var FRAME_RATE = 20;
