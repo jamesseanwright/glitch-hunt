@@ -8,7 +8,7 @@
     var HEIGHT = 0.2;
     var SPEED = 0.012;
     var JUMP_HEIGHT = 0.5;
-    var JUMP_SPEED = 0.008;
+    var JUMP_SPEED = 0.016;
     var FRAME_RATE = 20;
 
     function Player() {
