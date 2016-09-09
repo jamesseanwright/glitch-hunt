@@ -8,6 +8,7 @@
     var HEIGHT = 0.2;
     var SPEED = 0.012;
     var JUMP_SPEED = 0.016;
+    var SHOOT_Y_OFFSET = 0.0745;
     var FRAME_RATE = 20;
 
     function Player() {
@@ -20,6 +21,7 @@
         G.imageRenderable(this, this.getSprite);
 		G.keyboardMoveable(this, SPEED);
         G.jumping(this, Y, JUMP_SPEED);
+        G.shooting(this, 'bullet', SHOOT_Y_OFFSET);
     };
 
 	Player.prototype.getSprite = function getSprite() {

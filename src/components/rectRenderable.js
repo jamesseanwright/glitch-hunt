@@ -7,4 +7,4 @@
 
         G.rectRenderSystem.register(entity);
     };
-}())
+}());

@@ -2,12 +2,17 @@ var entityPool = {
     _entities: {
         button: {
             activeCount: 0,
-            items: [ {} ]
+            items: []
         },
 
         key: {
             activeCount: 0,
-            items: [ {} ]
+            items: []
+        },
+
+        bullet: {
+            activeCount: 0,
+            items: []
         },
 
         singletons: {

@@ -3,6 +3,24 @@
 
     var entityPool = {
         _entities: {
+            bullet: {
+                position: 0,
+                items: [
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet(),
+                    new G.Bullet()
+                ]
+            },
+
             button: {
                 position: 0,
                 items: [new G.Button()]

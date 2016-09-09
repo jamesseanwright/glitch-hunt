@@ -4,7 +4,7 @@
     var JUMP_KEY = 'a';
 
     function JumpSystem() {
-        this.i = 0;
+        this.i = 0; // TODO: this won't work if more than one entity wants to jump
     }
 
     JumpSystem.prototype = G.system.create(function next(entity) {

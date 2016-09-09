@@ -11,6 +11,7 @@
     G.jumpSystem = new G.JumpSystem();
 	G.keyboardMoveSystem = new G.KeyboardMoveSystem();
 	G.rectRenderSystem = new G.RectRenderSystem(G.renderingContext);
+	G.shootSystem = new G.ShootSystem();
 	G.shrinkSystem = new G.ShrinkSystem();
 	G.spriteAnimationSystem = new G.SpriteAnimationSystem();
     G.textRenderSystem = new G.TextRenderSystem(G.renderingContext);
