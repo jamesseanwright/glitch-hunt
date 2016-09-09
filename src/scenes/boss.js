@@ -6,7 +6,7 @@
             var glitch = G.entityPool.getSingleton('glitch');
             var player = G.entityPool.getSingleton('player');
 
-            glitch.init(0.8, 0.6, 0.20, 0.3556, 0.01);
+            glitch.init(0.8, 0.775, 0.1, 0.1778, 0.008);
             player.init();
         },
 

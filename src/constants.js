@@ -11,7 +11,7 @@
             PIXEL_HEIGHT: 360,
             WORLD_WIDTH: 1,
             WORLD_HEIGHT: 1,
-            GRAVITY: 0.0003,
+            GRAVITY: 0.00045,
 
             KEY_GEN_DECREMENT_MS: 80,
             KEY_CAPTURE_SCORE_INCREMENT: 100,

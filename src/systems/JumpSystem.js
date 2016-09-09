@@ -19,6 +19,7 @@
 
         if (entity.y >= entity.baseY) {
             entity.isJumping = false;
+            entity.y = entity.baseY;
             this.i = 0;
         }
     });
