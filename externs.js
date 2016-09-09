@@ -16,6 +16,7 @@ var entityPool = {
         },
 
         singletons: {
+            background: {},
             hud: {},
             logo: {},
             screen: {},

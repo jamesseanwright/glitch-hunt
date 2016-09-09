@@ -1,24 +1,27 @@
 (function () {
     'use strict';
 
+    var BUTTON_X = 0.355;
+    var BUTTON_Y = 0.5;
+    var BUTTON_WIDTH = 0.3;
+    var BUTTON_HEIGHT = 0.2;
+
     G.scenes.title = {
         start: function start() {
             this.button = G.entityPool.get('button');
-            this.logo = G.entityPool.getSingleton('logo');
 
-            var buttonX = 0.355;
-            var buttonY = 0.5;
-            var buttonWidth = 0.3;
-            var buttonHeight = 0.2;
+            G.entityPool.getSingleton('background');
+            G.entityPool.getSingleton('logo');
 
-            this.button.init('New Game', buttonX, buttonY, buttonWidth, buttonHeight, function () {
+            this.button.init('New Game', BUTTON_X, BUTTON_Y, BUTTON_WIDTH, BUTTON_HEIGHT, function () {
                 G.scenes.title.end();
-                G.scenes.boss.start();
+                G.scenes.hacking.start();
             });
         },
 
         end: function end() {
             G.entityPool.reset(this.button);
+            G.entityPool.resetSingleton('background');
             G.entityPool.resetSingleton('logo');
         }
     };

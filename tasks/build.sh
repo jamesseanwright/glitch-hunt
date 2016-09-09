@@ -52,6 +52,7 @@ closure-compiler \
 	--js src/components/spriteAnimatable.js \
 	--js src/components/textRenderable.js \
 	\
+	--js src/entities/Background.js \
 	--js src/entities/Bullet.js \
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \

@@ -1,14 +1,20 @@
 (function () {
     'use strict';
 
+    var X = 0.8;
+    var Y = 0.775;
+    var WIDTH = 0.1;
+    var HEIGHT = 0.1778;
+    var SPEED = 0.008;
+
     function Glitch() {
 
     }
 
-    Glitch.prototype.init = function init(x, y, width, height, speed) {
-        G.positionable(this, x, y, width, height);
+    Glitch.prototype.init = function init() {
+        G.positionable(this, X, Y, WIDTH, HEIGHT);
         G.imageRenderable(this, G.images.glitch);
-        G.autoMoveable(this, speed, G.autoMoveable.direction.LEFT);
+        G.autoMoveable(this, SPEED, G.autoMoveable.direction.LEFT);
         G.bounceable(this);
     };
 

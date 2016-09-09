@@ -45,6 +45,7 @@
             },
 
             singletons: {
+                background: new G.Background(),
                 captureZone: new G.CaptureZone(),
                 glitch: new G.Glitch(),
                 hud: new G.Hud(),
