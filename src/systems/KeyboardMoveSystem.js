@@ -12,13 +12,10 @@
             key = G.keyboardMoveable.keys[i];
 
             if (G.keyboard.isPressed(key.name)) {
+                entity.isMoving = true;                
                 entity.direction = key.direction;
                 entity.x += entity.speed * entity.direction;
-
-                if (!entity.isMoving) {
-                    entity.onMove(entity.direction === G.keyboardMoveable.direction.LEFT);
-                    entity.isMoving = true;
-                }
+                entity.onMove(entity.direction === G.keyboardMoveable.direction.LEFT);
 
                 return;
             }
