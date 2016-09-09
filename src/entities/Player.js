@@ -7,7 +7,6 @@
     var ANIMATED_WIDTH = 0.08;
     var HEIGHT = 0.2;
     var SPEED = 0.012;
-    var JUMP_HEIGHT = 0.5;
     var JUMP_SPEED = 0.016;
     var FRAME_RATE = 20;
 
@@ -20,7 +19,7 @@
         G.positionable(this, X, Y, WIDTH, HEIGHT);
         G.imageRenderable(this, this.getSprite);
 		G.keyboardMoveable(this, SPEED);
-        G.jumping(this, Y, JUMP_HEIGHT, JUMP_SPEED);
+        G.jumping(this, Y, JUMP_SPEED);
     };
 
 	Player.prototype.getSprite = function getSprite() {
