@@ -21,4 +21,4 @@
             G.entityPool.resetSingleton('glitch');
         }
     };
-}());0, 0, 1, 0.08
+}());
