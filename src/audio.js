@@ -27,9 +27,20 @@
             isLooping: true,
 
             parts: [
-                'VOXA42G42F42E42D42C42A42C42A42G42F42E42D42C42A42C42',
-                'GTRF44F44F44F44F44F44F44E44',
-                'BSSD22D22D22D22F22F22F22F22A22A22A22A22D32D32D32D32'
+                'VOXA42G22F42E42D42C42A42C42',
+                'GTRF44F44F44F44',
+                'BSSD21D21D21D21F21F21F21F21A21A21A21A21D31D31D31D31'
+            ]
+        },
+
+        snippet: {
+            bpm: 240,
+            isLooping: false,
+
+            parts: [
+                'VOXG44A#44G42A#44C58',
+                'GTRC416',
+                'BSSF28D#22D23C27'
             ]
         }
     };
