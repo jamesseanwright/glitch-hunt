@@ -52,8 +52,8 @@
         G.imageRenderable(this, this.getSprite);
     };
 
-    Player.prototype.onCollision = function onCollision(target) {
-        if (target instanceof G.Glitch && !this.isInvincible) { // TODO: stop leaking invincible component abstraction
+    Player.prototype.onCollision = function onCollision(entity) {
+        if (entity instanceof G.Glitch && !this.isInvincible) { // TODO: stop leaking invincible component abstraction
             G.flashing(this, FLASH_INTERVAL_MS, INVINCIBILITY_DURATION_MS);
             G.invincible(this);
             G.gameState.decreaseHealth();
