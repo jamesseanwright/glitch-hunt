@@ -18,7 +18,8 @@
             KEY_SPEED_INCREMENT: 0.001,
             SCORE_LEVEL_UP_THRESHOLD: 1000,
             CAPTURE_ZONE_X_INCREMENT: 0.01,
-            BOSS_LEVEL_INTERVAL: 3
+            BOSS_LEVEL_INTERVAL: 3,
+            BOSS_DEFEAT_SCORE_INCREMENT: 1000
         }
     };
 }());

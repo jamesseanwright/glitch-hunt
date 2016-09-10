@@ -29,6 +29,7 @@
         if (this.health === 0) {
             G.imageRenderable(this, G.images.glitchShot);
             G.shrinkable(this);
+            G.gameState.onBossDefeated();
         }
     };
 
