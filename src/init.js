@@ -18,4 +18,7 @@
 	G.renderingCanvas.height = G.constants.PIXEL_HEIGHT;
 
     G.renderingContext['imageSmoothingEnabled'] = false; // closure compiler hax!
+    G.renderingContext['mozImageSmoothingEnabled'] = false;
+    G.renderingContext['webkitImageSmoothingEnabled'] = false;
+    G.renderingContext['msImageSmoothingEnabled'] = false;
 }());
