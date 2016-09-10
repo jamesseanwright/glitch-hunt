@@ -19,6 +19,7 @@
             G.entityPool.resetSingleton('captureZone');
             G.entityPool.resetSingleton('keyGen');
             G.entityPool.resetSingleton('hud');
+            G.entityPool.resetGroup('key');
         }
     };
 }());

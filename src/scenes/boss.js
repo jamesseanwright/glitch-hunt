@@ -17,6 +17,8 @@
         end: function end() {
             G.entityPool.resetSingleton('background');
             G.entityPool.resetSingleton('hud');
+            G.entityPool.resetSingleton('player');
+            G.entityPool.resetSingleton('glitch');
         }
     };
 }());0, 0, 1, 0.08

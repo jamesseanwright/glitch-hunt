@@ -48,6 +48,7 @@ closure-compiler \
 	--js src/components/generating.js \
 	--js src/components/hurtable.js \
 	--js src/components/imageRenderable.js \
+	--js src/components/invincible.js \
 	--js src/components/jumping.js \
 	--js src/components/keyboardMoveable.js \
 	--js src/components/positionable.js \

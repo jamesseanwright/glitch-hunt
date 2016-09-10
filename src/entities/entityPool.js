@@ -79,6 +79,14 @@
             entity.isActive = false;
         },
 
+        resetGroup: function resetGroup(groupName) {
+            var groupItems = this._entities[groupName].items;
+
+            for (var i = 0; i < groupItems.length; i++) {
+                this.reset(groupItems[i]);
+            }
+        },
+
         resetSingleton: function resetSingleton(name) {
             var entity = this._entities.singletons[name];
             entity.isActive = false;
