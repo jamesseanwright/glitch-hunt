@@ -8,10 +8,9 @@ else
 fi
 
 closure-compiler \
-	--js lib/nanotunes.js \
-	\
 	--js src/constants.js \
 	--js src/init.js \
+	--js src/audio.js \
 	--js src/gameState.js \
 	--js src/images.js \
 	--js src/getScreenPos.js \
@@ -87,5 +86,6 @@ closure-compiler \
 
 cp src/index.html dist/
 cp src/index.css dist/
+cp lib/nanotunes.min.js dist/
 
 zip -9 -j -D -X -r glitch-jw.zip dist/*

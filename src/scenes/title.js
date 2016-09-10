@@ -8,6 +8,7 @@
 
     G.scenes.title = {
         start: function start() {
+            G.audio.playTrack('title');
             this.button = G.entityPool.get('button');
 
             G.entityPool.getSingleton('background');
