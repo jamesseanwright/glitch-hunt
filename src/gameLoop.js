@@ -21,6 +21,7 @@
 		G.jumpSystem.update(timestamp);
 		G.shootSystem.update(timestamp);
 		G.collisionSystem.update(timestamp);
+		G.flashSystem.update(timestamp);
 
 		requestAnimationFrame(gameLoop);
 	}

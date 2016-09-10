@@ -25,6 +25,7 @@ closure-compiler \
 	--js src/systems/ClickSystem.js \
 	--js src/systems/CollisionSystem.js \
 	--js src/systems/ComputedPositionSystem.js \
+	--js src/systems/FlashSystem.js \
 	--js src/systems/GeneratorSystem.js \
 	--js src/systems/ImageRenderSystem.js \
 	--js src/systems/JumpSystem.js \
@@ -43,6 +44,7 @@ closure-compiler \
 	--js src/components/clickable.js \
 	--js src/components/collidable.js \
 	--js src/components/computedPositionable.js \
+	--js src/components/flashing.js \
 	--js src/components/generating.js \
 	--js src/components/hurtable.js \
 	--js src/components/imageRenderable.js \

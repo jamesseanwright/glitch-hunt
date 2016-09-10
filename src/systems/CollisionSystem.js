@@ -24,7 +24,8 @@
             hasYCollision = entity.y >= target.y && entity.y <= target.y + target.height;
 
             if (hasXCollision && hasYCollision) {
-                console.log('collision');
+                entity.onCollision && entity.onCollision(target);
+                target.onCollision && target.onCollision(entity);
             }
         }
     };

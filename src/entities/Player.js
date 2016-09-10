@@ -11,6 +11,8 @@
     var HEALTH = 4;
     var SHOOT_Y_OFFSET = 0.0745;
     var FRAME_RATE = 20;
+    var FLASH_INTERVAL_MS = 500;
+    var INVINCIBILITY_DURATION_MS = 3000;
 
     function Player() {
 
@@ -48,6 +50,16 @@
         G.spriteAnimatable.deregister(this);
         G.positionable(this, this.x, this.y, WIDTH, HEIGHT);
         G.imageRenderable(this, this.getSprite);
+    };
+
+    Player.prototype.onCollision = function onCollision(target) {
+        if (target instanceof G.Glitch) {
+            G.flashing(this, FLASH_INTERVAL_MS, INVINCIBILITY_DURATION_MS);
+        }
+    };
+
+    Player.prototype.onFlashEnd = function onFlashEnd() {
+        G.flashing.deregister(this);
     };
 
     G.Player = Player;
