@@ -21,7 +21,7 @@
         }
 
         return entity.x > G.constants.WORLD_WIDTH;
-    }
+    };
 
     G.AutoMoveSystem = AutoMoveSystem;
 }());

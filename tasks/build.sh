@@ -23,6 +23,7 @@ closure-compiler \
 	--js src/systems/BounceSystem.js \
 	--js src/systems/CaptureSystem.js \
 	--js src/systems/ClickSystem.js \
+	--js src/systems/CollisionSystem.js \
 	--js src/systems/ComputedPositionSystem.js \
 	--js src/systems/GeneratorSystem.js \
 	--js src/systems/ImageRenderSystem.js \
@@ -40,8 +41,10 @@ closure-compiler \
 	--js src/components/capturable.js \
 	--js src/components/capturing.js \
 	--js src/components/clickable.js \
+	--js src/components/collidable.js \
 	--js src/components/computedPositionable.js \
 	--js src/components/generating.js \
+	--js src/components/hurtable.js \
 	--js src/components/imageRenderable.js \
 	--js src/components/jumping.js \
 	--js src/components/keyboardMoveable.js \

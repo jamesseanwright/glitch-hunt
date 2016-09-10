@@ -5,6 +5,7 @@
 	G.bounceSystem = new G.BounceSystem();
 	G.captureSystem = new G.CaptureSystem();
 	G.clickSystem = new G.ClickSystem(G.renderingCanvas);
+	G.collisionSystem = new G.CollisionSystem();
 	G.computedPositionSystem = new G.ComputedPositionSystem();
 	G.generatorSystem = new G.GeneratorSystem();
     G.imageRenderSystem = new G.ImageRenderSystem(G.renderingContext);

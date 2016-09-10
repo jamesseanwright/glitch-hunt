@@ -20,6 +20,7 @@
 		G.keyboardMoveSystem.update(timestamp);
 		G.jumpSystem.update(timestamp);
 		G.shootSystem.update(timestamp);
+		G.collisionSystem.update(timestamp);
 
 		requestAnimationFrame(gameLoop);
 	}

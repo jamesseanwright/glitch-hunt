@@ -6,6 +6,7 @@
     var WIDTH = 0.1;
     var HEIGHT = 0.1778;
     var SPEED = 0.008;
+    var HEALTH = 10;
 
     function Glitch() {
 
@@ -16,6 +17,7 @@
         G.imageRenderable(this, G.images.glitch);
         G.autoMoveable(this, SPEED, G.autoMoveable.direction.LEFT);
         G.bounceable(this);
+        G.hurtable(this, HEALTH);
     };
 
     G.Glitch = Glitch;
