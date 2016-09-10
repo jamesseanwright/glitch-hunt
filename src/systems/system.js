@@ -19,7 +19,9 @@ G.system = {
         var index = this._entities.indexOf(entity);
 
         if (index > -1) {
-            this._entities[index] = undefined;
+            this._entities = this._entities.filter(function (e) {
+                return entity != e;
+            });
         }
     },
 
