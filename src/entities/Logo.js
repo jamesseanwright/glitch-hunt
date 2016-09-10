@@ -1,11 +1,11 @@
 (function () {
     'use strict';
 
-    function Logo() {
-        var x = 0.26;
-        var y = 0.25;
+    var X = 0.26;
+    var Y = 0.25;
 
-	    G.positionable(this, x, y);
+    function Logo() {
+	    G.positionable(this, X, Y);
 	    G.textRenderable(this, 'Glitch Hacker', 24);
     }
 

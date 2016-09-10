@@ -47,6 +47,7 @@
             singletons: {
                 background: new G.Background(),
                 captureZone: new G.CaptureZone(),
+                gameOver: new G.GameOver(),
                 glitch: new G.Glitch(),
                 hud: new G.Hud(),
                 keyGen: new G.KeyGen(),

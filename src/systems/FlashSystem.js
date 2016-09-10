@@ -2,7 +2,6 @@
     'use strict';
 
     function FlashSystem() {
-        console.log('flash system init');
     }
 
     FlashSystem.prototype = G.system.create(function next(entity, timestamp) {

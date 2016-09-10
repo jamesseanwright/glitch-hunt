@@ -22,6 +22,10 @@
         G.shrinkable(this);
     };
 
+    Key.prototype.onLeftScreen = function onLeftScreen() {
+        G.gameState.decreaseHealth();
+    };
+
     Key.getRandomKeyIndex = function getRandomKeyIndex() {
         return Math.floor(Math.random() * G.keyboard.supportedKeys.length);
     }

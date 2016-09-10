@@ -11,6 +11,7 @@
         entity.x += speed * entity.direction;
 
         if (AutoMoveSystem.hasLeftScreen(entity)) {
+            entity.onLeftScreen && entity.onLeftScreen();
             G.entityPool.reset(entity);
         }
     });
