@@ -18,6 +18,7 @@
         G.autoMoveable(this, SPEED, G.autoMoveable.direction.LEFT);
         G.bounceable(this);
         G.hurtable(this, HEALTH);
+        G.collidable(this);
     };
 
     G.Glitch = Glitch;

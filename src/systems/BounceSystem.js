@@ -5,9 +5,9 @@
 
     }
 
-    BounceSystem.prototype = G.system.create(function next(entity) {		
+    BounceSystem.prototype = G.system.create(function next(entity) {
 		if (BounceSystem.hasHitScreenEdge(entity)) {
-            entity.direction = entity.direction * -1;
+            entity.direction *= -1;
         }
     });
 
@@ -15,7 +15,7 @@
 		if (entity.direction === G.autoMoveable.direction.LEFT) {
 			return entity.x <= 0;
 		}
-			
+
 		return entity.x + entity.width >= G.constants.WORLD_WIDTH;
 	}
 

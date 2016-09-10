@@ -11,12 +11,12 @@
 		G.spriteAnimationSystem.update(timestamp);
 		G.rectRenderSystem.update(timestamp);
 		G.textRenderSystem.update(timestamp);
+		G.bounceSystem.update(timestamp);
 		G.autoMoveSystem.update(timestamp);
 		G.captureSystem.update(timestamp);
 		G.generatorSystem.update(timestamp);
 		G.shrinkSystem.update(timestamp);
 		G.computedPositionSystem.update(timestamp);
-		G.bounceSystem.update(timestamp);
 		G.keyboardMoveSystem.update(timestamp);
 		G.jumpSystem.update(timestamp);
 		G.shootSystem.update(timestamp);

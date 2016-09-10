@@ -24,6 +24,7 @@
         G.jumping(this, Y, JUMP_SPEED);
         G.shooting(this, 'bullet', SHOOT_Y_OFFSET);
         G.hurtable(this, HEALTH);
+        G.collidable(this);
     };
 
 	Player.prototype.getSprite = function getSprite() {
