@@ -9,7 +9,7 @@
             var hud = G.entityPool.getSingleton('hud');
 
             captureZone.init(G.gameState.captureZoneX, 0.07, 0.15, 0.85);
-            keyGen.init(0.8, 0.4, 0.09, 0.09);
+            keyGen.init(0.8, 0.4);
             screen.init(0, 0, 1, 1);
             hud.init();
         },

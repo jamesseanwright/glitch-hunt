@@ -1,17 +1,19 @@
 (function () {
     'use strict';
+    var WIDTH = 0.09;
+    var HEIGHT = 0.11;
 
     function Key() {
 
     }
 
-    Key.prototype.init = function init(x, y, width, height, speed) {
+    Key.prototype.init = function init(x, y) {
         var keyIndex = Key.getRandomKeyIndex();
 
         G.shrinkable.deregister(this);
-        G.positionable(this, x, y, width, height);
+        G.positionable(this, x, y, WIDTH, HEIGHT);
         G.imageRenderable(this, G.spriteSheets.keys.get(keyIndex));
-        G.autoMoveable(this, speed, G.autoMoveable.direction.LEFT);
+        G.autoMoveable(this, G.computations.computeKeySpeed, G.autoMoveable.direction.LEFT);
         G.capturable(this, G.keyboard.supportedKeys[keyIndex]);
     };
 

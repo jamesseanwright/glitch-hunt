@@ -9,7 +9,7 @@
 		if (this.lastGenerationTimeMs + G.computations.computeKeyGenerationTime() < timestamp) {
             var generatedEntity = G.entityPool.get(entity.entityToGenerate);
 
-            generatedEntity.init(entity.x, entity.y, entity.width, entity.height, G.computations.computeSpeed);
+            generatedEntity.init(entity.x, entity.y);
             this.lastGenerationTimeMs = timestamp;
         }
     });

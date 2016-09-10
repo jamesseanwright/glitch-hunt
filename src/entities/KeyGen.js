@@ -5,9 +5,9 @@
 
     }
 
-    KeyGen.prototype.init = function init(keyX, keyY, keyWidth, keyHeight) {
+    KeyGen.prototype.init = function init(keyX, keyY) {
         G.generating(this, 'key');
-        G.positionable(this, keyX, keyY, keyWidth, keyHeight);
+        G.positionable(this, keyX, keyY);
     };
 
     G.KeyGen = KeyGen;

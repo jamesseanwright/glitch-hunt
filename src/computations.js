@@ -4,7 +4,7 @@
     /* Methods used by various system to calculate
      * speeds and positions based upon game state */
     G.computations = {
-        computeSpeed: function computeSpeed() {
+        computeKeySpeed: function computeKeySpeed() {
             return G.gameState.keySpeed + G.constants.KEY_SPEED_INCREMENT * G.gameState.level;
         },
 

@@ -13,6 +13,7 @@
     }
 
     Glitch.prototype.init = function init() {
+        G.shrinkable.deregister(this);
         G.positionable(this, X, Y, WIDTH, HEIGHT);
         G.imageRenderable(this, G.images.glitch);
         G.autoMoveable(this, SPEED, G.autoMoveable.direction.LEFT);
