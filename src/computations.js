@@ -13,7 +13,7 @@
         },
 
         computeKeyGenerationTime: function computeKeyGenerationTime() {
-            return G.gameState.keyGenIntervalMs - G.constants.KEY_GEN_DECREMENT_MS * G.gameState.level;
+            return G.constants.KEY_GEN_INTERVAL_MS - G.constants.KEY_GEN_DECREMENT_MS * G.gameState.level;
         }
     };
 }());

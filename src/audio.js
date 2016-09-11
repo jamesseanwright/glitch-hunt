@@ -112,6 +112,22 @@
             gainNode.connect(context.destination);
             oscillatorNode.start();
             oscillatorNode.stop(context.currentTime + 0.3);
+        },
+
+        capture: function capture() {
+            var oscillatorNode = context.createOscillator();
+            var gainNode = context.createGain();
+
+            oscillatorNode.type = 'square';
+            oscillatorNode.frequency.setValueAtTime(150, context.currentTime);
+            oscillatorNode.frequency.exponentialRampToValueAtTime(20, context.currentTime + 0.3);
+
+            gainNode.gain.value = 0.2;
+
+            oscillatorNode.connect(gainNode);
+            gainNode.connect(context.destination);
+            oscillatorNode.start();
+            oscillatorNode.stop(context.currentTime + 0.3);
         }
     };
 }());

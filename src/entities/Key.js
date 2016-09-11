@@ -19,6 +19,7 @@
 
     Key.prototype.onCapture = function onCapture() {
         G.gameState.increaseScore();
+        G.audio.capture();
 
         G.autoMoveable.deregister(this);
         G.shrinkable(this);

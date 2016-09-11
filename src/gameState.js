@@ -3,11 +3,10 @@
 
     G.gameState = {
         score: 0,
-        level: 1,
-        health: 5,
-        keySpeed: 0.003,
-        captureZoneX: 0.1,
-        keyGenIntervalMs: 1000,
+        level: G.constants.STARTING_LEVEL,
+        health: G.constants.STARTING_HEALTH,
+        keySpeed: G.constants.STARTING_KEY_SPEED,
+        captureZoneX: G.constants.CAPTURE_ZONE_START_X,
 
         increaseScore: function increaseScore(increment) {
             G.gameState.score += increment || G.constants.KEY_CAPTURE_SCORE_INCREMENT;
@@ -33,7 +32,16 @@
                 G.scenes.hacking.end();
                 G.scenes.boss.end();
                 G.scenes.gameOver.start();
+                G.gameState.reset();
             }
+        },
+
+        reset: function reset() {
+            G.gameState.score = 0;
+            G.gameState.level = G.constants.STARTING_LEVEL;
+            G.gameState.health = G.constants.STARTING_HEALTH;
+            G.gameState.keySpeed = G.constants.STARTING_KEY_SPEED;
+            G.gameState.captureZoneX = G.constants.CAPTURE_ZONE_START_X;
         }
     };
 }());
