@@ -9,6 +9,15 @@
 
             G.audio.playTrack('snippet');
             G.entityPool.getSingleton('getReady');
+
+            G.audio.onTrackStop = function onTrackStop() {
+                G.scenes.getReady.end();
+                G.scenes.hacking.start();
+            };
+        },
+
+        end: function end() {
+            G.entityPool.resetSingleton('getReady');
         }
     };
 }());

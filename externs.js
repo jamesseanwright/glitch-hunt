@@ -94,3 +94,10 @@ var tracks = {
         parts: []
     }
 };
+
+NT.prototype.onStop = function () {}
+
+var audio = {
+    start: function () {},
+    onTrackStop: function () {}
+};

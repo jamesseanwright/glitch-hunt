@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
+    var context = new (window.AudioContext || webkitAudioContext)();
+
     var instruments = {
         VOX: {
             wave: 'square',
@@ -54,7 +56,11 @@
         }
     };
 
-    var nanoTunes = new NT(instruments, tracks);
+    var nanoTunes = new NT(instruments, tracks, context);
+
+    nanoTunes.onStop = function onStop() {
+        G.audio.onTrackStop && G.audio.onTrackStop();
+    };
 
     G.audio = {
         playTrack: function playTrack(name) {
