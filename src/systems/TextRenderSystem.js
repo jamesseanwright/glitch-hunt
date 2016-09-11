@@ -2,13 +2,15 @@
     'use strict';
 
     var A_CHAR_CODE = 'a'.charCodeAt();
-    var ZERO_INDEX = 30;
+    var ZERO_INDEX = 32;
 
     var specialIndices = {
         ' ': 26,
         '?': 27,
         '!': 28,
-        ':': 29
+        ':': 29,
+        '.': 30,
+        ',': 31
     };
 
     function TextRenderSystem(context) {

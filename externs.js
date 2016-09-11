@@ -23,6 +23,15 @@ var entityPool = {
             screen: {},
             captureZone: {},
             keyGen: {},
+            instructionsTitle: {},
+            instructionsFirstLine: {},
+            instructionsSecondLine: {},
+            instructionsThirdLine: {},
+            instructionsFourthLine: {},
+            instructionsFifthLine: {},
+            instructionsSixthLine: {},
+            instructionsSeventhLine: {},
+            instructionsEighthLine: {},
             glitch: {},
             player: {}
         }

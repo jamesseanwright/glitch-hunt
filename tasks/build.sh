@@ -66,6 +66,15 @@ closure-compiler \
 	--js src/entities/GameOver.js \
 	--js src/entities/Glitch.js \
 	--js src/entities/Hud.js \
+	--js src/entities/InstructionsTitle.js \
+	--js src/entities/InstructionsFirstLine.js \
+	--js src/entities/InstructionsSecondLine.js \
+	--js src/entities/InstructionsThirdLine.js \
+	--js src/entities/InstructionsFourthLine.js \
+	--js src/entities/InstructionsFifthLine.js \
+	--js src/entities/InstructionsSixthLine.js \
+	--js src/entities/InstructionsSeventhLine.js \
+	--js src/entities/InstructionsEighthLine.js \
 	--js src/entities/Key.js \
 	--js src/entities/KeyGen.js \
 	--js src/entities/Logo.js \
@@ -76,6 +85,7 @@ closure-compiler \
 	--js src/scenes/boss.js \
 	--js src/scenes/gameOver.js \
 	--js src/scenes/hacking.js \
+	--js src/scenes/instructions.js \
 	--js src/scenes/title.js \
 	\
 	--js src/gameLoop.js \

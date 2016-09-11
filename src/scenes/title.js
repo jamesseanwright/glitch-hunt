@@ -16,7 +16,7 @@
 
             this.button.init('New Game', BUTTON_X, BUTTON_Y, BUTTON_WIDTH, BUTTON_HEIGHT, function () {
                 G.scenes.title.end();
-                G.scenes.hacking.start();
+                G.scenes.instructions.start();
             });
         },
 

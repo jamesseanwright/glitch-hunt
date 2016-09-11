@@ -5,19 +5,19 @@
         VOX: {
             wave: 'square',
             pan: -0.5,
-            gain: 0.3
+            gain: 0.1
         },
 
         BSS: {
             wave: 'triangle',
             pan: 0.5,
-            gain: 0.7
+            gain: 0.5
         },
 
         GTR: {
             wave: 'sawtooth',
             pan: 0.4,
-            gain: 0.23
+            gain: 0.09
         },
     };
 
@@ -35,12 +35,21 @@
 
         snippet: {
             bpm: 240,
-            isLooping: false,
 
             parts: [
                 'VOXG44A#44G42A#44C58',
                 'GTRC416',
                 'BSSF28D#22D23C27'
+            ]
+        },
+
+        gameOver: {
+            bpm: 60,
+
+            parts: [
+                'VOXF38E34D34G316',
+                'GTRA48G44F44E41F41E41D41E412',
+                'BSSF28E24D24C216'
             ]
         }
     };
