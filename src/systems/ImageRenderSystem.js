@@ -7,7 +7,7 @@
 
     ImageRenderSystem.prototype = G.system.create(function next(entity) {
         var image;
-
+        
         if (!entity.isHidden) {
             image = entity.image instanceof Function ? entity.image() : entity.image;
 

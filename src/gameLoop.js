@@ -1,7 +1,6 @@
 (function () {
 	'use strict';
 
-	G.scenes.title.start();
 	G.keyboard.init(window);
 
 	function gameLoop(timestamp) {
@@ -26,5 +25,13 @@
 		requestAnimationFrame(gameLoop);
 	}
 
-	gameLoop();
+	/* Workaround for most browsers. Otherwise, the game starts
+	 * with no images, even though they're base64-encoded strings. */
+
+	G.initImages().then(function () {
+		G.initSpriteSheets();
+		G.initEntityPool();
+		G.scenes.title.start();
+		gameLoop();	
+	});
 }());

@@ -21,6 +21,7 @@ var entityPool = {
         },
 
         singletons: {
+            author: {},
             background: {},
             gameOver: {},
             getReady: {},
@@ -105,4 +106,16 @@ NT.prototype.onStop = function () {}
 var audio = {
     start: function () {},
     onTrackStop: function () {}
+};
+
+var images = {
+    background: {},
+    keys: {},
+    screen: {},
+    font: {},
+    playerStationary: {},
+    playerRunningLeft: {},
+    playerRunningRight: {},
+    glitch: {},
+    glitchShot: {}
 };

@@ -59,6 +59,7 @@ closure-compiler \
 	--js src/components/spriteAnimatable.js \
 	--js src/components/textRenderable.js \
 	\
+	--js src/entities/Author.js \
 	--js src/entities/Background.js \
 	--js src/entities/Bullet.js \
 	--js src/entities/Button.js \
@@ -100,4 +101,4 @@ cp src/index.html dist/
 cp src/index.css dist/
 cp lib/nanotunes.min.js dist/
 
-zip -9 -j -D -X -r glitch-jw.zip dist/*
+zip -9 -j -D -X -r glitch-hunt.zip dist/*

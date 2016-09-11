@@ -13,6 +13,7 @@
 
             G.entityPool.getSingleton('background');
             G.entityPool.getSingleton('logo');
+            G.entityPool.getSingleton('author');
 
             this.button.init('New Game', BUTTON_X, BUTTON_Y, BUTTON_WIDTH, BUTTON_HEIGHT, function () {
                 G.scenes.title.end();
@@ -24,6 +25,7 @@
             G.entityPool.reset(this.button);
             G.entityPool.resetSingleton('background');
             G.entityPool.resetSingleton('logo');
+            G.entityPool.resetSingleton('author');
         }
     };
 }());
