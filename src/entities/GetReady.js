@@ -4,10 +4,10 @@
     var X = 0.33;
     var Y = 0.4;
 
-    function GameOver() {
+    function GetReady() {
 	    G.positionable(this, X, Y);
-	    G.textRenderable(this, 'Game Over!', 24);
+	    G.textRenderable(this, 'Get Ready!', 24);
     }
 
-    G.GameOver = GameOver;
+    G.GetReady = GetReady;
 }())

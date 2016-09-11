@@ -64,6 +64,7 @@ closure-compiler \
 	--js src/entities/Button.js \
 	--js src/entities/CaptureZone.js \
 	--js src/entities/GameOver.js \
+	--js src/entities/GetReady.js \
 	--js src/entities/Glitch.js \
 	--js src/entities/Hud.js \
 	--js src/entities/InstructionsTitle.js \
@@ -84,6 +85,7 @@ closure-compiler \
 	\
 	--js src/scenes/boss.js \
 	--js src/scenes/gameOver.js \
+	--js src/scenes/getReady.js \
 	--js src/scenes/hacking.js \
 	--js src/scenes/instructions.js \
 	--js src/scenes/title.js \

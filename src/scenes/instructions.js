@@ -23,7 +23,7 @@
 
             this.button.init('Start', BUTTON_X, BUTTON_Y, BUTTON_WIDTH, BUTTON_HEIGHT, function () {
                 G.scenes.instructions.end();
-                G.scenes.hacking.start();
+                G.scenes.getReady.start();
             });
         },
 

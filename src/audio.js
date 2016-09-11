@@ -1,4 +1,4 @@
-(function (global) {
+(function () {
     'use strict';
 
     var instruments = {
@@ -61,4 +61,4 @@
             nanoTunes.play(name);
         }
     };
-}(this));
+}());

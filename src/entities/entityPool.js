@@ -48,6 +48,7 @@
                 background: new G.Background(),
                 captureZone: new G.CaptureZone(),
                 gameOver: new G.GameOver(),
+                getReady: new G.GetReady(),
                 glitch: new G.Glitch(),
                 hud: new G.Hud(),
                 instructionsTitle: new G.InstructionsTitle(),
