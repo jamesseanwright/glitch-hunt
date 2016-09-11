@@ -14,6 +14,8 @@
 
         end: function end() {
             G.entityPool.resetSingleton('gameOver');
+            G.entityPool.resetSingleton('hud');
+            G.gameState.reset();
         }
     };
 }());

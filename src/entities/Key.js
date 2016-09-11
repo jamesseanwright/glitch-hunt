@@ -2,6 +2,7 @@
     'use strict';
     var WIDTH = 0.09;
     var HEIGHT = 0.11;
+    var LEFT_SCREEN_BOUNDARY = 0.13;
 
     function Key() {
 
@@ -13,7 +14,7 @@
         G.shrinkable.deregister(this);
         G.positionable(this, x, y, WIDTH, HEIGHT);
         G.imageRenderable(this, G.spriteSheets.keys.get(keyIndex));
-        G.autoMoveable(this, G.computations.computeKeySpeed, G.autoMoveable.direction.LEFT);
+        G.autoMoveable(this, G.computations.computeKeySpeed, G.autoMoveable.direction.LEFT, LEFT_SCREEN_BOUNDARY);
         G.capturable(this, G.keyboard.supportedKeys[keyIndex]);
     };
 

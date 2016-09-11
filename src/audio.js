@@ -7,19 +7,19 @@
         VOX: {
             wave: 'square',
             pan: -0.5,
-            gain: 0.1
+            gain: 0.06
         },
 
         BSS: {
             wave: 'triangle',
             pan: 0.5,
-            gain: 0.5
+            gain: 0.4
         },
 
         GTR: {
             wave: 'sawtooth',
             pan: 0.4,
-            gain: 0.09
+            gain: 0.05
         },
     };
 
@@ -75,7 +75,7 @@
             oscillatorNode.frequency.setValueAtTime(100, context.currentTime);
             oscillatorNode.frequency.exponentialRampToValueAtTime(200, context.currentTime + 0.3);
 
-            gainNode.gain.value = 0.2;
+            gainNode.gain.value = 0.1;
 
             oscillatorNode.connect(gainNode);
             gainNode.connect(context.destination);
@@ -91,7 +91,7 @@
             oscillatorNode.frequency.setValueAtTime(70, context.currentTime);
             oscillatorNode.frequency.exponentialRampToValueAtTime(50, context.currentTime + 0.2);
 
-            gainNode.gain.value = 0.3;
+            gainNode.gain.value = 0.2;
 
             oscillatorNode.connect(gainNode);
             gainNode.connect(context.destination);
@@ -106,7 +106,7 @@
             oscillatorNode.type = 'sawtooth';
             oscillatorNode.frequency.value = 40;
 
-            gainNode.gain.value = 0.15;
+            gainNode.gain.value = 0.1;
 
             oscillatorNode.connect(gainNode);
             gainNode.connect(context.destination);
@@ -122,7 +122,7 @@
             oscillatorNode.frequency.setValueAtTime(150, context.currentTime);
             oscillatorNode.frequency.exponentialRampToValueAtTime(20, context.currentTime + 0.3);
 
-            gainNode.gain.value = 0.2;
+            gainNode.gain.value = 0.1;
 
             oscillatorNode.connect(gainNode);
             gainNode.connect(context.destination);

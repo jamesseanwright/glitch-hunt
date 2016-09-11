@@ -1,9 +1,11 @@
 (function () {
     'use strict';
 
-    G.autoMoveable = function autoMoveable(entity, speed, direction) {
+    G.autoMoveable = function autoMoveable(entity, speed, direction, leftBoundary, rightBoundary) {
         entity.speed = speed;
         entity.direction = direction;
+        entity.leftBoundary = leftBoundary || 0;
+        entity.rightBoundary = rightBoundary || G.constants.WORLD_WIDTH;
 
         G.autoMoveSystem.register(entity);
     };

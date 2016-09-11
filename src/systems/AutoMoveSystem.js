@@ -18,10 +18,10 @@
 
     AutoMoveSystem.hasLeftScreen = function hasLeftScreen(entity) {
         if (entity.direction === G.autoMoveable.direction.LEFT) {
-            return entity.x + entity.width < 0;
+            return entity.x + entity.width < entity.leftBoundary;
         }
 
-        return entity.x > G.constants.WORLD_WIDTH;
+        return entity.x > entity.rightBoundary;
     };
 
     G.AutoMoveSystem = AutoMoveSystem;

@@ -16,9 +16,9 @@
 
         end: function end() {
             G.entityPool.resetSingleton('background');
-            G.entityPool.resetSingleton('hud');
             G.entityPool.resetSingleton('player');
             G.entityPool.resetSingleton('glitch');
+            G.entityPool.resetGroup('bullet');
         }
     };
 }());

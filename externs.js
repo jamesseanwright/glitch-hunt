@@ -15,6 +15,11 @@ var entityPool = {
             items: []
         },
 
+        screenEdge: {
+            activeCount: 0,
+            items: []
+        },
+
         singletons: {
             background: {},
             gameOver: {},

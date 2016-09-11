@@ -32,7 +32,6 @@
                 G.scenes.hacking.end();
                 G.scenes.boss.end();
                 G.scenes.gameOver.start();
-                G.gameState.reset();
             }
         },
 
