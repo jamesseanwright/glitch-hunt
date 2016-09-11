@@ -38,6 +38,9 @@
         },
 
         isPressed(keyName) {
+            // workaround for case-sensitive key bug
+            keyName = keyName.indexOf('Arrow') !== -1 ? keyName : keyName.toLowerCase();
+
             return this._activeKeys[keyName];
         },
 
@@ -48,6 +51,8 @@
         },
 
         _updateKey(keyName, isActive) {
+            // workaround for case-sensitive key bug
+            keyName = keyName.indexOf('Arrow') !== -1 ? keyName : keyName.toLowerCase();
             this._activeKeys[keyName] = isActive;
         }
     };
