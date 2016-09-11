@@ -16,10 +16,10 @@
         var width = G.getScreenXPos(entity.width);
         var height = G.getScreenYPos(entity.height);
 
-        var isInBounds = event.clientX >= x 
-                            && event.clientX <= x + width
-                            && event.clientY >= y 
-                            && event.clientY <= y + height;
+        var isInBounds = event.clientX >= x &&
+            event.clientX <= x + width &&
+            event.clientY >= y &&
+            event.clientY <= y + height;
 
         if (isInBounds) {
             entity.clickAction();

@@ -6,7 +6,7 @@
     }
 
     ShrinkSystem.prototype = G.system.create(function next(entity) {
-		if (entity.width > 0) {
+        if (entity.width > 0) {
             entity.x += 0.005;
             entity.width -= 0.01;
         }

@@ -22,20 +22,20 @@
         G.spriteAnimatable.deregister(this);
         G.positionable(this, X, Y, WIDTH, HEIGHT);
         G.imageRenderable(this, this.getSprite);
-		G.keyboardMoveable(this, SPEED);
+        G.keyboardMoveable(this, SPEED);
         G.jumping(this, Y, JUMP_SPEED);
         G.shooting(this, 'bullet', SHOOT_Y_OFFSET);
         G.hurtable(this, HEALTH);
         G.collidable(this);
     };
 
-	Player.prototype.getSprite = function getSprite() {
-		if (this.direction === G.keyboardMoveable.direction.LEFT) {
-			return G.spriteSheets.playerStationary.get(0);
-		}
+    Player.prototype.getSprite = function getSprite() {
+        if (this.direction === G.keyboardMoveable.direction.LEFT) {
+            return G.spriteSheets.playerStationary.get(0);
+        }
 
-		return G.spriteSheets.playerStationary.get(1);
-	};
+        return G.spriteSheets.playerStationary.get(1);
+    };
 
     Player.prototype.onMove = function onMove(isLeft) {
         var spriteSheet;

@@ -4,7 +4,7 @@
     var ONE_SECOND_MS = 1000;
 
     function SpriteAnimationSystem() {
-		this.lastFrameTimeMs = 0;
+        this.lastFrameTimeMs = 0;
         this.currentFrame = 0;
     }
 

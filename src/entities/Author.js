@@ -5,8 +5,8 @@
     var Y = 0.75;
 
     function Author() {
-	    G.positionable(this, X, Y);
-	    G.textRenderable(this, 'By James Wright', 18);
+        G.positionable(this, X, Y);
+        G.textRenderable(this, 'By James Wright', 18);
     }
 
     G.Author = Author;

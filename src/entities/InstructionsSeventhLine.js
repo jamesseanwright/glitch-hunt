@@ -5,8 +5,8 @@
     var Y = 0.47;
 
     function InstructionsSeventhLine() {
-	    G.positionable(this, X, Y);
-	    G.textRenderable(this, 'battle a glitch. In this case, A jumps, S shoots,', 12);
+        G.positionable(this, X, Y);
+        G.textRenderable(this, 'battle a glitch. In this case, A jumps, S shoots,', 12);
     }
 
     G.InstructionsSeventhLine = InstructionsSeventhLine;

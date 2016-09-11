@@ -6,18 +6,18 @@
     }
 
     BounceSystem.prototype = G.system.create(function next(entity) {
-		if (BounceSystem.hasHitScreenEdge(entity)) {
+        if (BounceSystem.hasHitScreenEdge(entity)) {
             entity.direction *= -1;
         }
     });
 
     BounceSystem.hasHitScreenEdge = function hasLeftScreen(entity) {
-		if (entity.direction === G.autoMoveable.direction.LEFT) {
-			return entity.x <= 0;
-		}
+        if (entity.direction === G.autoMoveable.direction.LEFT) {
+            return entity.x <= 0;
+        }
 
-		return entity.x + entity.width >= G.constants.WORLD_WIDTH;
-	}
+        return entity.x + entity.width >= G.constants.WORLD_WIDTH;
+    }
 
     G.BounceSystem = BounceSystem;
 }());

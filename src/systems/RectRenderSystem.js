@@ -8,7 +8,7 @@
     RectRenderSystem.prototype = G.system.create(function next(entity) {
         if (entity.fill) {
             this.context.fillStyle = entity.fill;
-        
+
             this.context.fillRect(
                 G.getScreenXPos(entity.x),
                 G.getScreenYPos(entity.y),

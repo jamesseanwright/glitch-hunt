@@ -2,8 +2,8 @@
     'use strict';
 
     G.spriteAnimatable = function spriteAnimatable(entity, spriteSheet, frameRate) {
-		entity.spriteSheet = spriteSheet;
-		entity.frameRate = frameRate;
+        entity.spriteSheet = spriteSheet;
+        entity.frameRate = frameRate;
 
         G.spriteAnimationSystem.register(entity);
     };

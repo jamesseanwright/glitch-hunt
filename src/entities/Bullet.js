@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-	var WIDTH = 0.03;
-	var HEIGHT = 0.01;
-	var SPEED = 0.05;
+    var WIDTH = 0.03;
+    var HEIGHT = 0.01;
+    var SPEED = 0.05;
 
     function Bullet() {
 

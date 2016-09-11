@@ -13,7 +13,13 @@
     };
 
     G.keyboardMoveable.keys = [
-        { name: 'ArrowLeft', direction: G.keyboardMoveable.direction.LEFT },
-        { name: 'ArrowRight', direction: G.keyboardMoveable.direction.RIGHT }
+        {
+            name: 'ArrowLeft',
+            direction: G.keyboardMoveable.direction.LEFT
+        },
+        {
+            name: 'ArrowRight',
+            direction: G.keyboardMoveable.direction.RIGHT
+        }
     ];
 }());

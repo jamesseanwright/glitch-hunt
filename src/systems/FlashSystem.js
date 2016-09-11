@@ -1,8 +1,7 @@
 (function () {
     'use strict';
 
-    function FlashSystem() {
-    }
+    function FlashSystem() {}
 
     FlashSystem.prototype = G.system.create(function next(entity, timestamp) {
         entity.flashStartMs = entity.flashStartMs || timestamp;

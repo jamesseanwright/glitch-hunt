@@ -17,9 +17,9 @@
     };
 
     Hud.computeText = function computeText() {
-        return 'Score: ' + G.gameState.score
-            + '  Level: ' + G.gameState.level
-            + '  Hits: ' + G.gameState.health;
+        return 'Score: ' + G.gameState.score +
+            '  Level: ' + G.gameState.level +
+            '  Hits: ' + G.gameState.health;
     };
 
     G.Hud = Hud;

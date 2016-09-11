@@ -3,7 +3,7 @@
 
     function ComputedPositionSystem() {
 
-	}
+    }
 
     ComputedPositionSystem.prototype = G.system.create(function next(entity) {
         if (entity.computeX) {
