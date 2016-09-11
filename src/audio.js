@@ -65,6 +65,53 @@
     G.audio = {
         playTrack: function playTrack(name) {
             nanoTunes.play(name);
+        },
+
+        jump: function jump() {
+            var oscillatorNode = context.createOscillator();
+            var gainNode = context.createGain();
+
+            oscillatorNode.type = 'square';
+            oscillatorNode.frequency.setValueAtTime(100, context.currentTime);
+            oscillatorNode.frequency.exponentialRampToValueAtTime(200, context.currentTime + 0.3);
+
+            gainNode.gain.value = 0.2;
+
+            oscillatorNode.connect(gainNode);
+            gainNode.connect(context.destination);
+            oscillatorNode.start();
+            oscillatorNode.stop(context.currentTime + 0.3);
+        },
+
+        shoot: function shoot() {
+            var oscillatorNode = context.createOscillator();
+            var gainNode = context.createGain();
+
+            oscillatorNode.type = 'triangle';
+            oscillatorNode.frequency.setValueAtTime(70, context.currentTime);
+            oscillatorNode.frequency.exponentialRampToValueAtTime(50, context.currentTime + 0.2);
+
+            gainNode.gain.value = 0.3;
+
+            oscillatorNode.connect(gainNode);
+            gainNode.connect(context.destination);
+            oscillatorNode.start();
+            oscillatorNode.stop(context.currentTime + 0.2);
+        },
+
+        hit: function hit() {
+            var oscillatorNode = context.createOscillator();
+            var gainNode = context.createGain();
+
+            oscillatorNode.type = 'sawtooth';
+            oscillatorNode.frequency.value = 40;
+
+            gainNode.gain.value = 0.15;
+
+            oscillatorNode.connect(gainNode);
+            gainNode.connect(context.destination);
+            oscillatorNode.start();
+            oscillatorNode.stop(context.currentTime + 0.3);
         }
     };
 }());

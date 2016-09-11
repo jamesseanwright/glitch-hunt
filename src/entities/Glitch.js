@@ -24,13 +24,23 @@
 
     Glitch.prototype.onCollision = function onCollision(entity) {
         if (entity instanceof G.Bullet) {
+            G.audio.hit();
             this.health--; // TODO - stop leaky abstraction
         }
 
         if (this.health === 0) {
+            G.collidable.deregister(this);
             G.imageRenderable(this, G.images.glitchShot);
             G.shrinkable(this);
             G.gameState.onBossDefeated();
+
+            // TODO: this probably shouldn't live here
+            G.audio.playTrack('snippet');
+
+            G.audio.onTrackStop = function onTrackStop() {
+                G.scenes.boss.end();
+                G.scenes.hacking.start();
+            };
         }
     };
 

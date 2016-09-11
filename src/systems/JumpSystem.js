@@ -9,6 +9,10 @@
 
     JumpSystem.prototype = G.system.create(function next(entity) {
         if (G.keyboard.isPressed(JUMP_KEY)) {
+            if (!entity.isJumping) {
+                G.audio.jump(); // TODO: move into SoundSystem?
+            }
+
             entity.isJumping = true;
         }
 
