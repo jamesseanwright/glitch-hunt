@@ -9,7 +9,7 @@ Patch the glitches in the system by pressing the keys on your keyboard as they e
 
 ## Play Online
 
-Coming soon!
+Play via [Glitch Hunt](http://js13kgames.com/entries/glitch-hunt)'s entry page on the js13kGames website.
 
 
 ## Supported Browsers
