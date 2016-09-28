@@ -32,6 +32,21 @@ Press the keys that appear on screen as they enter the capture zone.
 * S - shoot
 
 
+## Making Of
+
+I wrote a [blog entry](https://jamesswright.co.uk/blog/1474997-glitch-hunt-js13kgames-2016) detailing the motivation and technology behind my game, as well as what could have gone better.
+
+
+## Judges' Feedback
+
+> A cool mix of guitar hero/DDR and a metroidvania. Nice idea, fun!
+- Christer Kaitila
+
+> I really liked that this game was not just a typing game but also had some fighting in it. It was very smart to make the typing part only use keys you would need for fighting, so your hand would always be ready for the challenge. Overall, the game is well made.
+
+- Jupiter Hadley
+
+
 ## Local Development
 
 Once you've cloned this repository, you'll need to run the install script. This cURLs the [NanoTunes](https://github.com/jamesseanwright/nanotunes) library into the `lib` directory.
