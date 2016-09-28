@@ -40,11 +40,13 @@ I wrote a [blog entry](https://jamesswright.co.uk/blog/1474997-glitch-hunt-js13k
 ## Judges' Feedback
 
 > A cool mix of guitar hero/DDR and a metroidvania. Nice idea, fun!
-- Christer Kaitila
+
+-Christer Kaitila
 
 > I really liked that this game was not just a typing game but also had some fighting in it. It was very smart to make the typing part only use keys you would need for fighting, so your hand would always be ready for the challenge. Overall, the game is well made.
 
-- Jupiter Hadley
+
+-Jupiter Hadley
 
 
 ## Local Development
