@@ -61,7 +61,7 @@
     function loadAndRegisterImage(data) {
         return new Promise(function (resolve) {
             var image = new Image();
-            
+
             image.onload = function () {
                 G.images[data.name] = image;
                 resolve();

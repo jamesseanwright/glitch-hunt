@@ -6,7 +6,7 @@
         this.spriteWidth = spriteWidth;
         this.spriteHeight = spriteHeight;
         this.sheetWidth = sheetWidth;
-        this.spritesCount = Math.ceil(this.sheetWidth / this.spriteWidth);        
+        this.spritesCount = Math.ceil(this.sheetWidth / this.spriteWidth);
         this.sprites = this.renderSprites();
     };
 
